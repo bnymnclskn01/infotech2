@@ -1,0 +1,15 @@
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\bin\Debug\net7.0\infotech2.OneClass.exe
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\bin\Debug\net7.0\infotech2.OneClass.deps.json
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\bin\Debug\net7.0\infotech2.OneClass.runtimeconfig.json
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\bin\Debug\net7.0\infotech2.OneClass.dll
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\bin\Debug\net7.0\infotech2.OneClass.pdb
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.csproj.AssemblyReference.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.AssemblyInfoInputs.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.AssemblyInfo.cs
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.csproj.CoreCompileInputs.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.dll
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\refint\infotech2.OneClass.dll
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.pdb
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\infotech2.OneClass.genruntimeconfig.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\infotech2.OneClass\obj\Debug\net7.0\ref\infotech2.OneClass.dll

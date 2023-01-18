@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "infotech2.OneClass/1.0.0": {
+        "runtime": {
+          "infotech2.OneClass.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "infotech2.OneClass/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
