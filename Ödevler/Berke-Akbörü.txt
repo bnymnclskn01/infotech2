@@ -1,0 +1,273 @@
+// Örnek 1 Double // 
+
+//double vize, final, uygulama, ortalama;
+
+//Console.WriteLine("Vize notunu giriniz : ");
+
+//vize = Convert.ToDouble(Console.ReadLine());
+
+//Console.WriteLine("Final notunu giriniz : ");
+
+//final = Convert.ToDouble(Console.ReadLine());
+
+//Console.WriteLine("Uygulama notunu giriniz : ");
+
+//uygulama = Convert.ToDouble(Console.ReadLine());
+
+//ortalama = (vize + final + uygulama ) / 3;
+
+//Console.WriteLine("Ortalamaniz : " + ortalama);
+
+//Console.Read();
+
+// Örnek 2 Double //
+
+//double yaricap, yükskelik, alan, hacim;
+
+//Console.WriteLine("Yaricapi giriniz : ");
+
+//yaricap= Convert.ToDouble(Console.ReadLine());
+
+//Console.WriteLine("Yüksekligi giriniz : ");
+
+//yükskelik= Convert.ToDouble(Console.ReadLine());
+
+//alan = 2 * 3.14 * yaricap * (yaricap + yükskelik);
+
+//hacim = 3.14 * yaricap * yaricap * yükskelik;
+
+//Console.WriteLine("Silindirin alani : " + alan);
+
+//Console.WriteLine("Silindirin hacmi : " + hacim);
+
+//Console.ReadKey();
+
+
+// Double Örnek 3 //
+
+
+//double alis, karoran, satis;
+
+//Console.Write("Sayıyı Girin : ");
+
+//alis = Convert.ToDouble(Console.ReadLine());
+
+//Console.Write("Kar Oranını Girin : ");
+
+//karoran = Convert.ToDouble(Console.ReadLine());
+
+//satis = alis + (alis * karoran / 100);
+
+//Console.WriteLine("Satış Fiyatı : {0}", satis);
+
+//Console.ReadKey();
+
+
+// string ornek 1 //
+
+
+//string ünvan, ad, soyad;
+
+//Console.WriteLine("Unvaninizi giriniz : ");
+
+//ünvan = Console.ReadLine();
+
+//Console.WriteLine("Adinizi giriniz : ");
+
+//ad = Console.ReadLine();
+
+//Console.WriteLine("Soyadinizi Giriniz : ");
+
+//soyad= Console.ReadLine();
+
+//Console.WriteLine("Merhaba {0} {1} {2}" , ünvan , ad , soyad);
+
+//Console.ReadKey();  
+
+// switch case örnek 1 // 
+
+
+//double bakiye = 600.9;
+
+//basla:
+
+//Console.WriteLine("Garanti bankasina hosgeldiniz...");
+
+//Console.WriteLine(" Lütfen yapmak istediginiz islemi seciniz. ");
+
+//Console.WriteLine("1- Bakiye Görüntüle\n2- Para cek\n3- Para yatir\n4- Cikis yap ");
+
+//string secim = Console.ReadLine();
+
+//switch (secim)
+//{
+
+//    case "1":
+
+//        Console.WriteLine("Bakiyeniz : " + bakiye);
+//        Console.ReadLine();
+
+//        break;
+
+
+//    case "2":
+
+//        Console.WriteLine("Cekmek istediginiz tutari giriniz : ");
+
+//        double cekilecek_tutar = Convert.ToDouble(Console.ReadLine());
+
+//        if (cekilecek_tutar > bakiye)
+//        {
+
+//            Console.WriteLine("Bakiyenizden fazla para cekemezsiniz.");
+//            Console.ReadLine();
+
+
+//        }
+
+//        else
+
+//        {
+
+//            Console.WriteLine("Kalan bakiyeniz : " + (bakiye - cekilecek_tutar));
+//            Console.ReadLine();
+//        }
+
+//        break;
+
+//    case "3":
+
+//        Console.WriteLine("Yatirmak istediginiz tutari giriniz : ");
+
+//        double yatirilacak_tutar = Convert.ToDouble(Console.ReadLine());
+
+//        Console.WriteLine("Yeni bakiyeniz : " + (bakiye + yatirilacak_tutar));
+
+//        Console.ReadLine();
+
+//       break;
+
+//        case "4":
+
+
+//        Console.WriteLine("Hesabinizdan cikis yapildi.Iyi günler dileriz.");
+//        Console.ReadLine();
+
+
+//    break;
+
+
+//    default:
+
+//        Console.WriteLine("Lütfen gecerli bir deger seciniz.");
+//        Console.ReadLine();
+//        break;                
+
+
+
+//}
+
+//goto basla;
+
+
+// switch case örnek 2 //
+
+//double yaricap, yükseklik, sonuc;
+
+//basla:
+
+//int secim;
+
+//Console.WriteLine("Yaricapi giriniz : ");
+
+//yaricap=Convert.ToDouble(Console.ReadLine());
+
+//Console.WriteLine("Yükeskligi giriniz : ");
+
+//yükseklik =Convert.ToDouble(Console.ReadLine());
+
+//Console.WriteLine("1-Alan\n2-Hacim");
+
+//secim = Convert.ToInt16(Console.ReadLine());
+
+//switch (secim)
+//{
+//    case 1:
+//        sonuc = 2 * 3.14 * (yaricap) * (yaricap + yükseklik);
+//        Console.WriteLine("Alan Hesap Sonucu = {0}", sonuc);
+//        break;
+//    case 2:
+//        sonuc = 3.14 * (yaricap * yaricap) * yükseklik;
+//        Console.WriteLine("Hacim = {0}", sonuc);
+//        break;
+//    default:
+//        Console.WriteLine("Yanlış işlem yaptınız");
+//        break;
+
+//}
+//goto basla;
+
+
+// int örnek 1 //
+
+//int sayi1, sayi2, toplam;
+
+//Console.Write("1. Sayı : ");
+
+//sayi1 = Convert.ToInt32(Console.ReadLine());
+
+//Console.Write("2. Sayı : ");
+
+//sayi2 = Convert.ToInt32(Console.ReadLine());
+
+//toplam = sayi1 + sayi2;
+
+//Console.WriteLine("{0} ve {1} Sayısının Toplamı : {2}", sayi1, sayi2, toplam);
+
+//Console.ReadKey();
+
+//int örnek 2 //
+
+
+//int sayi1, sayi2, cikarma;
+
+//Console.WriteLine("1.Sayiyi giriniz: ");
+
+//sayi1 = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("2.Sayiyi giriniz: ");
+
+//sayi2= Convert.ToInt32(Console.ReadLine());
+
+//cikarma = sayi1 - sayi2;
+
+//Console.WriteLine("{0} ve {1} Sayisinin farki : {2}" , sayi1, sayi2 , cikarma);
+
+//Console.ReadKey();
+
+
+// int örnek 3 //
+
+
+//int sayi1, sayi2, carpma;
+
+//basla:
+
+//Console.WriteLine("1. Sayiyi giriniz : ");
+
+//sayi1 = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("2.Sayiyi giriniz : ");
+
+//sayi2 = Convert.ToInt32(Console.ReadLine());
+
+//carpma= sayi1 * sayi2;
+
+//Console.WriteLine("{0} ve {1} Sayisinin carpimi : {2}" ,sayi1 , sayi2, carpma);
+
+
+//Console.ReadKey();
+
+//goto basla;
+
+

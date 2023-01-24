@@ -412,5 +412,889 @@ istemiyor mu Kolay Gelsin
  
  
  */
+//Console.Write("1. metni giriniz: ");
+//string metin1 = Console.ReadLine();
+//Console.Write("2. metni giriniz: ");
+//string metin2 = Console.ReadLine();
+//Console.Write("3. metni giriniz: ");
+//string metin3 = Console.ReadLine();
+//string birlestirilen = metin1 + " " + metin2 + " " + metin3;
+//Console.WriteLine("{0}, {1} ve {3} kelimelerinin birleştirilmiş hali: {3}", metin1, metin2, birlestirilen);
+//Console.ReadKey();
+
+
+#region Örnek-1 "Kullanıcıdan alınan iki sayının toplamını, farkını, çarpımını ve bölümünü hesaplama"
+
+//double sayi1, sayi2;
+//Console.WriteLine("Lütfen ilk sayıyı giriniz:");
+//sayi1 = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Lütfen ikinci sayıyı giriniz:");
+//sayi2 = Convert.ToDouble(Console.ReadLine());
+
+//double toplam = sayi1 + sayi2;
+//double fark = sayi1 - sayi2;
+//double carpim = sayi1 * sayi2;
+//double bolum = sayi1 / sayi2;
+
+//Console.WriteLine("İki sayının toplamı: " + toplam);
+//Console.WriteLine("İki sayının farkı: " + fark);
+//Console.WriteLine("İki sayının çarpımı: " + carpim);
+//Console.WriteLine("İki sayının bölümü: " + bolum);
+#endregion
+
+
+#region Örnek-2
+//int x = 0;
+//int y = 0;
+
+//Console.WriteLine("X koordinatını giriniz:");
+//x = int.Parse(Console.ReadLine());
+
+//Console.WriteLine("Y koordinatını giriniz:");
+//y = int.Parse(Console.ReadLine());
+
+//Console.WriteLine("Konumunuz: (" + x + ", " + y + ")");
+//#endregion
+
+//#region Örnek-3 Ad Soyad ve tc ÖRNEĞİ
+//Console.WriteLine("Adınızı giriniz:");
+//string ad = Console.ReadLine();
+
+//Console.WriteLine("Soyadınızı giriniz:");
+//string soyad = Console.ReadLine();
+
+//Console.WriteLine("TC Kimlik Numaranızı giriniz:");
+//string tc = Console.ReadLine();
+
+//Console.WriteLine("Adınız: " + ad);
+//Console.WriteLine("Soyadınız: " + soyad);
+//Console.WriteLine("TC Kimlik Numaranız: " + tc);
+#endregion
+
+#region Örnek -3
+//Console.WriteLine("Evet mi yoksa hayır mı? (E/H)");
+//string cevap = Console.ReadLine().ToUpper();
+
+//switch (cevap)
+//{
+//    case "E":
+//        Console.WriteLine("Evet seçildi.");
+//        break;
+//    case "H":
+//        Console.WriteLine("Hayır seçildi.");
+//        break;
+//    default:
+//        Console.WriteLine("Geçersiz seçim.");
+//        break;
+//}
+#endregion
+
+#region Örnek -4
+//Console.WriteLine("Hangi ayı seçmek istersiniz? (1-12)");
+//int ay = int.Parse(Console.ReadLine());
+
+//switch (ay)
+//{
+//    case 1:
+//        Console.WriteLine("Ocak seçildi.");
+//        break;
+//    case 2:
+//        Console.WriteLine("Şubat seçildi.");
+//        break;
+//    case 3:
+//        Console.WriteLine("Mart seçildi.");
+//        break;
+//    case 4:
+//        Console.WriteLine("Nisan seçildi.");
+//        break;
+//    case 5:
+//        Console.WriteLine("Mayıs seçildi.");
+//        break;
+//    case 6:
+//        Console.WriteLine("Haziran seçildi.");
+//        break;
+//    case 7:
+//        Console.WriteLine("Temmuz seçildi.");
+//        break;
+//    case 8:
+//        Console.WriteLine("Ağustos seçildi.");
+//        break;
+//    case 9:
+//        Console.WriteLine("Eylül seçildi.");
+//        break;
+//    case 10:
+//        Console.WriteLine("Ekim seçildi.");
+//        break;
+//    case 11:
+//        Console.WriteLine("Kasım seçildi.");
+//        break;
+//    case 12:
+//        Console.WriteLine("Aralık seçildi.");
+//        break;
+//    default:
+//        Console.WriteLine("Geçersiz ay seçimi.");
+//        break;
+
+//}
+#endregion
+
+
+//Console.Write("****************************************");
+//Console.WriteLine();
+//Console.Write("Ugulamalı koşul oyununa hoş geldiniz.");
+//Console.WriteLine();
+//Console.Write("****************************************");
+//Console.WriteLine();
+//Console.WriteLine("Lütfen adınızı soyadınızı giriniz : ");
+//string nameSurname=Console.ReadLine();
+//Console.WriteLine("Lütfen yaşınızı giriniz : ");
+
+//int age = Convert.ToInt16(Console.ReadLine());
+#region Yaşı 18 den büyükse kullanınıcın işlemlerin odluğu satırlar bu region blokları arasındadır.
+//if (age >= 18)
+//{
+//    Console.Write("****************************************");
+//    Console.WriteLine();
+//    Console.Write("1- Korku evi oyunu\n2- Outlast\n3- Half-Life\n4-Microsoft Flight Sm\n");
+//    int secim=Convert.ToInt16(Console.ReadLine());
+//    Console.WriteLine();
+//    Console.Write("****************************************");
+//    Console.WriteLine();
+//    // =>---------- Yorum Başlangıç --------- <=
+
+//    //Buradaki secim bloğu yukardaki seçimi kapasyarak koşul ifadelerini yerine getirir.
+
+//    // =>---------- Yorum Bitiş --------- <=
+//    if (secim == 1)
+//    {
+//        Console.Write("****************************************");
+//        Console.WriteLine();
+//        Console.Write("1- Oyun başlasın mı?\n2- Oyunu iptal et\n");
+//        secim = Convert.ToInt16(Console.ReadLine());
+//        switch (secim)
+//        {
+//            case 1:
+//                Console.WriteLine();
+//                Console.Write("1. Kapıya gir\n2. Kapıya gir\n3.Kapıya gir.\n");
+//                secim= Convert.ToInt16(Console.ReadLine());
+//                Console.WriteLine();
+//                if (secim == 1)
+//                {
+//                    Console.Write("1- Yerdeki sopayı al\n2- Oyun bitirme alanına git\n3- Oyundan çıkmayı dene");
+//                    secim = Convert.ToInt16(Console.ReadLine());
+//                    Console.WriteLine();
+//                    switch (secim)
+//                    {
+//                        case 1:
+//                            Console.Write("Sopa zehirliydi öldünüz.");
+//                            break;
+//                        case 2:
+//                            Console.WriteLine("Bu kadar kolay bu oyun bitemez bölüm sonu canavarına yakalandınız ve öldünüz.");
+//                            break;
+//                        case 3:
+//                            Console.WriteLine("Ya girdin ölmeden çıkabilir misin aslan burası kurtlar vadisi");
+//                            break;
+//                        default:
+//                            Console.WriteLine("Bazen risk almak başarıyı getirir.");
+//                            break;
+//                    }
+//                    break;
+//                }
+//                else if (secim == 2)
+//                {
+//                    Console.Write("Yanarak Öldünüz.");
+//                    Console.WriteLine();
+//                    break;
+//                }
+//                else if(secim == 3)
+//                {
+//                    Console.Write("Uçuruma denk geldiniz kapılar kapatıldı kurtuluşunuz ölümdür. İyi şanslar.");
+//                    Console.WriteLine();
+//                    break;
+//                }
+//                else
+//                {
+//                    Console.WriteLine("Bazen risk almak başarıyı getirir. Dediklerine bakma sen gene öldün öldün o bir kere olur bug buldun heryerde aynısı mı olacak sandın.");
+//                    break;
+//                }
+
+//            case 2:
+//                Console.WriteLine();
+//                Console.Write("Simülasyon sona ermiştir. Game Over\n");
+//                Console.WriteLine();
+//                break;
+//            default:
+//                Console.WriteLine();
+//                Console.Write("Yanlış İşlem Yaptınız");
+//                break;
+//        }
+//    }
+//}
+#endregion
+#region yaşı 0 dan büyük veya  17 ve veya 17den küçük olan yarışmacıların oynayacağı alan
+//else if (age >= 0 || age <= 17)
+//{
+
+//}
+#endregion
+#region Hiçbir koşula uymayanlar için oluşturulan alan
+//else
+//{
+//    Console.WriteLine("Hatalı yaş girdiniz oyun bitti.");
+//}
+#endregion
+/*
+ Dögü kalıpları
+ For
+ While
+ Do While
+ foreach
+ Hepsindeki mantık hepsinin döngünün kendi içinde döngüyü bağlayıcı
+ bir döngü koşulu olması zorunludur.
+For döngüsü her zaman kendini yenileyerek giden döngüler için
+kullanılır. Yani döndürüğü sonuç hiçbir zaman aynı olmaz.
+while
+do while
+Hem kendini yenileyen hemde tekrarlayan döngüler için kullanılır.
+sonuç her zaman aynı da gelebilir farklıda gelebilir. Ama bu döngülerde her zaman sabit çıktıya ihtiyacı vardır. döngü sonlanabilmesi için.
+do while döngüsünün bütün döngülerden tek farkı do while döngüsünde önce işlem yapılır sonra koşul ifadesi devregirer.
+foreach döngüsünde her zaman bir referansa ihtiyacı vardır. 
+foreach(var item in Model)
+for (var i; i<Model.Length(); i++)
+do
+{
+  İşlem gelir.
+}
+while(Model.Length);
+ */
+//double onluk_sayi = 0;
+//bool durum = true;
+//Console.WriteLine("İkilik tabannda bir sayı giriniz : (11100112211) : ");
+//string? ikilik_sayi = Console.ReadLine();
+//for (int i = 0; i < ikilik_sayi?.Length; i++)
+//{
+//	if (Convert.ToDouble(ikilik_sayi.Substring(i, 1)) < 2)
+//	{
+//		onluk_sayi += Convert.ToDouble(ikilik_sayi.Substring(i, 1));
+//	}
+//	else
+//	{
+//		Console.WriteLine("İkilik sayı sistemi 1 ve 0 lardan oluşmaktadır.");
+//		durum = false;
+//	}
+//}
+//if (durum == true)
+//{
+//	Console.WriteLine(ikilik_sayi + " sayısının onluk sayı tabanındaki karşılığı : " + onluk_sayi);
+//}
+//for (int i = 0; i <= 200; i++)
+//{
+//	if (i % 3 == 0 && i % 5 == 0)
+//		Console.WriteLine(i);
+//}
+//int taban, us, sonuc = 1;
+//Console.WriteLine("Taban sayısını giriniz : ");
+//taban = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Kuvvet sayısını giriniz : ");
+//us = Convert.ToInt32(Console.ReadLine());
+//for (int i = 0; i < us; i++)
+//{
+//    sonuc = sonuc * taban;
+//}
+//Console.WriteLine("Tabanı {0} ve kuvveti {1} olan sayının değeri = {2}", taban, us, sonuc);
+//string name = "admin", password = "admin";
+//int girisHakki = 3;
+//for (int i = 0;i < girisHakki; i++)
+//{
+//	if (i < 3)
+//	{
+//		Console.WriteLine("Kullanıcı Adını Giriniz : ");
+//		string userName = Console.ReadLine();
+//        Console.WriteLine("Kullanıcı Adını Giriniz : ");
+//        string userPassword = Console.ReadLine();
+//		if (userName == name && password == userPassword)
+//		{
+//			Console.WriteLine("ID'niz {0} Kullanıcı Adınız : {1} Kullanıcı Şifreniz : {2} bilgilerinize ulaştık başarılı giriş yaptınız tebrikler", Guid.NewGuid(), name, password);
+//			break;
+//		}
+//		else
+//		{
+//			Console.WriteLine("Yanlış İşlem Yaptınız.");
+//		}
+//    }
+//	else { Console.WriteLine("İşlem hakkınız bitmiştir"); }
+//}
+//int sayi, hak = 5;
+//bool durum = false;
+//Random rnd= new Random();
+//int rastgelesayi = rnd.Next(0, 100);
+//for (int i = hak; i > 0; i--)
+//{
+//    Console.WriteLine("Hakkınız : {0}", i);
+//    Console.WriteLine("Tahmininiz : ");
+//    sayi=int.Parse(Console.ReadLine());
+//    if (sayi == rastgelesayi)
+//    {
+//        Console.WriteLine("Full zararsın. Sözde kasa kazanır diyorlardı hep sen kazanıyorsun.");
+//        durum= true;
+//        break;
+//    }
+//}
+//if (!durum || durum == false)
+//{
+//    Console.WriteLine("Tekrar Deneyiniz.");
+//    Console.WriteLine("Sayi : {0}", rastgelesayi);
+//}
+//int sayi = 30, toplam = 0;
+//while (sayi >= 0)
+//{
+//    Console.WriteLine("Bir sayı giriniz : ");
+//    sayi = Convert.ToInt32(Console.ReadLine());
+//    if (sayi > 0)
+//    {
+//        toplam += sayi;
+//    }
+//}
+//Console.WriteLine("Girdiğiniz sayıların Toplamı = {0}", toplam);
+//int tahmin = 0, tutulan, sayac = 0;
+//Random rastgele=new Random();
+//tutulan = rastgele.Next(0, 10);
+//while (tahmin != tutulan)
+//{
+//    sayac++;
+//    Console.WriteLine("Bir sayı giriniz");
+//    tahmin=Convert.ToInt32(Console.ReadLine());
+//    if (tahmin > tutulan)
+//    {
+//        Console.WriteLine("Sayıyı Küçült");
+//    }
+//    else if (tahmin < tutulan)
+//    {
+//        Console.WriteLine("Sayıyı Büyült");
+//    }
+//}
+//Console.WriteLine("Tebrikler sayıyı bildiniz sayınız : {0}", tahmin);
+//Console.WriteLine("{0}. hakkınızda bildiniz. ",sayac);
+/*
+ tahmin=0 tutulan sayac=0
+ Random rastgele=random
+tutulan=rastgele
+döngü eğer ki tahminle tutlan esit değilse
+döngü devam edecek
+tutaln tahmin esitse ekrana 
+tutulan sayı ve kacınca bildiği cıkacak 
+ */
+//double bakiyemiz = 0, miktar=0;
+//int secim = 0;
+//while (secim == 0 || secim > 0 || secim != 5 || secim < 5) 
+//{
+//    Console.WriteLine("*****************************");
+//    Console.WriteLine("Tosun Bank'a hoşgeldiniz.");
+//    Console.WriteLine("*****************************");
+//    Console.WriteLine("Sayın Yetkili Bakiyeniz {0} TL'dir", bakiyemiz);
+//    Console.WriteLine("1- Para Çekme\n2- Para Yükleme\n3- Hesap Bakiyesi\n4 Fatura Ödeme\n(0 || 5) - Çıkış Yap");
+//    secim=Convert.ToInt32(Console.ReadLine());
+//    switch (secim)
+//    {
+//        case 1:
+//            Console.WriteLine("Çekeceğiniz Miktarı giriniz : ");
+//            miktar = Convert.ToDouble(Console.ReadLine());
+
+//            if (bakiyemiz - miktar <= 0)
+//            {
+//                Console.WriteLine("Allah'ın fakiri git önce para yatır!");
+//                break;
+//            }
+//            else
+//            {
+//                bakiyemiz = bakiyemiz - miktar;
+//                Console.WriteLine("Çektiğiniz Miktar {0}TL\nKalan Bakiyeniz {1}TL", miktar, bakiyemiz);
+//                Console.Clear();
+//                break;
+//            }
+
+//        case 2:
+//            Console.WriteLine("Lütfen yüklemek istediğiniz tutarı giriniz : ");
+//            miktar = Convert.ToDouble(Console.ReadLine());
+//            bakiyemiz += miktar;
+//            Console.Clear();
+//            break;
+//        case 3:
+//            Console.WriteLine("Hesabınızda {0}TL Bakiye Bulunmaktadır.", bakiyemiz);
+//            Console.Clear();
+//            break;
+//        case 4:
+//            Console.WriteLine("Fatura ödeyeceğiniz Tutar  : ");
+//            miktar = Convert.ToDouble(Console.ReadLine());
+
+//            if (bakiyemiz <= 0)
+//            {
+//                Console.WriteLine("Allah'ın fakiri git önce para yatır!");
+//            }
+//            else
+//            {
+//                bakiyemiz = bakiyemiz - miktar;
+//                Console.WriteLine("Fatura ödedikten sonra fatura tutarınız {0}TL\nKalan Bakiyeniz {1}TL", miktar, bakiyemiz);
+//            }
+//            Console.Clear();
+//            break;
+//        default:
+//            break;
+//    }
+//}
+#endregion
+#region Başlangıç Örnekleri
+//Console.WriteLine("Bu Bir Deneme Yazısıdır");
+//Console.WriteLine("Bu bir ikinci deneme yazısıdır");
+
+//Console.Write("Bu Bir Deneme Yazısıdır");
+//Console.Write("Bu bir ikinci deneme yazısıdır");
+// Varsayılan Değer Atama
+//string metin = "Bu bir metindir";
+//Console.Write(metin);
+//Console.WriteLine("Bir Yazı giriniz : ");
+//string metinler=Console.ReadLine();
+//Console.WriteLine(metinler);
+//Console.WriteLine("Bir Sayı giriniz : ");
+//int sayilar = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Girdiğiniz sayı : " + sayilar);
+//int sayi = 25;
+//char karekter = 'A';
+//string ad, soyad;
+//int yas;
+//decimal geliri;
+//float boy;
+//Console.Write("Adınızı Girinz : ");
+//ad=Console.ReadLine();
+//Console.WriteLine();
+//Console.Write("Soyadınızı Giriniz : ");
+//soyad=Console.ReadLine();
+//Console.WriteLine();
+//Console.Write("Yaşınızı Giriniz : ");
+//yas = Convert.ToUInt16(Console.ReadLine());
+//Console.WriteLine();
+//Console.Write("Gelirinizi Giriniz : ");
+//geliri = Convert.ToDecimal(Console.ReadLine());
+//Console.WriteLine();
+//Console.WriteLine("Lütfen Boyunuzu Giriniz : ");
+//boy = float.Parse(Console.ReadLine());
+//Console.Clear();
+//Console.WriteLine("Adınız Soyadınız : {0} {1}\nYaşınız : {2}\nGelirinizi : {3}\nBoyunuz : {4}", ad, soyad, yas, geliri, boy);
+
+//int yas;
+//Console.WriteLine("Lütfen Yaşınızı Giriniz : ");
+//yas = int.Parse(Console.ReadLine());
+//if (yas > 0 && yas >= 18)
+//{
+//    Console.WriteLine("Ehliyet sınavına katılabilirsiniz.");
+//}
+//else if (yas > 0 && yas < 18)
+//{
+//    Console.WriteLine("Ehliyet sınavına katılamazsınız.");
+//}
+//else
+//{
+//    Console.WriteLine("Yanlış İşlem Yaptınız");
+//}
+//switch (yas)
+//{
+//    case > 17:
+//        Console.WriteLine("Ehliyet Alabilirsiniz");
+//        break;
+//    case > 0:
+//        Console.WriteLine("Ehliyeti bu koşulda da alamazsınız");
+//        break;
+//    default:
+//        Console.WriteLine("Yanlış Yaptınız");
+//        break;
+//}
+
+
+//int secim;
+//Console.WriteLine("1 ile 12 sayıları arasında değer giriniz. Girdiğiniz değere karşılık size hangi ay olduğunu vereceğiz : ");
+//secim = Convert.ToInt32(Console.ReadLine());
+//if (secim == 1)
+//    Console.WriteLine("Ocak Ayını Seçtiniz");
+//else if (secim == 2)
+//    Console.WriteLine("Şubat Ayını Seçtiniz");
+//else if (secim == 3)
+//    Console.WriteLine("Mart Ayını Seçtiniz");
+//else if (secim == 4)
+//    Console.WriteLine("Nisan Ayını Seçtiniz");
+//else if (secim == 5)
+//    Console.WriteLine("Mayıs Ayını Seçtiniz");
+//else if (secim == 6)
+//    Console.WriteLine("Haziran Ayını Seçtiniz");
+//else if (secim == 7)
+//    Console.WriteLine("Temmuz Ayını Seçtiniz");
+//else if (secim == 8)
+//    Console.WriteLine("Ağustos Ayını Seçtiniz");
+//else if (secim == 9)
+//    Console.WriteLine("Eylül Ayını Seçtiniz");
+//else if (secim == 10)
+//    Console.WriteLine("Ekim Ayını Seçtiniz");
+//else if (secim == 11)
+//    Console.WriteLine("Kasım Ayını Seçtiniz");
+//else if (secim == 12)
+//    Console.WriteLine("Aralık Ayını Seçtiniz");
+//else
+//    Console.Write("Yanlış İşlem Yaptınız");
+//switch (secim)
+//{
+//    case 1:
+//        Console.WriteLine("Ocak Ayını Seçtiniz");
+//        break;
+//    case 2:
+//        Console.WriteLine("Şubat Ayını Seçtiniz");
+//        break;
+//    case 3:
+//        Console.WriteLine("Mart Ayını Seçtiniz");
+//        break;
+//    case 4:
+//        Console.WriteLine("Nisan Ayını Seçtiniz");
+//        break;
+//    case 5:
+//        Console.WriteLine("Mayıs Ayını Seçtiniz");
+//        break;
+//    case 6:
+//        Console.WriteLine("Haziran Ayını Seçtiniz");
+//        break;
+//    case 7:
+//        Console.WriteLine("Temmuz Ayını Seçtiniz");
+//        break;
+//    case 8:
+//        Console.WriteLine("Ağustos Ayını Seçtiniz");
+//        break;
+//    case 9:
+//        Console.WriteLine("Eylül Ayını Seçtiniz");
+//        break;
+//    case 10:
+//        Console.WriteLine("Ekim Ayını Seçtiniz");
+//        break;
+//    case 11:
+//        Console.WriteLine("Kasım Ayını Seçtiniz");
+//        break;
+//    case 12:
+//        Console.WriteLine("Aralık Ayını Seçtiniz");
+//        break;
+//    default:
+//        Console.Write("Yanlış İşlem Yaptınız");
+//        break;
+//}
+//int toplam = 0;
+//for (int i = 0; i <= 5; i++)
+//{
+//	toplam = toplam + i;
+//	Console.WriteLine(toplam);
+//}
+//int sayac = 0;
+//for (int i = 0; i < 50; i++)
+//{
+//	if (i % 3 == 0 && i % 5 == 0)
+//	{
+//		Console.WriteLine("Koşul Sağlanan Sayı : " + i);
+//		sayac++;
+//	}
+//}
+//Console.WriteLine("Toplam Döngü içindeki koşulu sağlayan sayı : " + sayac);
+//Console.WriteLine("Yksekliği Giriniz : ");
+//int yukseklik=Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Genişliği Giriniz : ");
+//int genislik=Convert.ToInt32(Console.ReadLine());
+//for(int i = 1; i <= yukseklik; i++)
+//{
+//	for (int j = 1; j <= genislik; j++)
+//	{
+//		if(i==1 || i == yukseklik)
+//		{
+//			Console.Write("*");
+//		}
+//		else
+//		{ Console.Write(""); }
+//	}
+//	Console.WriteLine();
+//}
+//string metin;
+//Console.WriteLine("Bir Metin Giriniz : ");
+//metin =Console.ReadLine();
+//int sayac = 0;
+//for (int i = 0; i<metin.Length; i++)
+//{
+//	if (metin[i] == 'a')
+//	{
+//		sayac++; 
+//	}
+//}
+//Console.WriteLine("Girilen Metindeki a adeti : {0}", sayac);
+
+//Console.WriteLine("Döngü limiti giriniz : ");
+//int donguLimit = Convert.ToInt32(Console.ReadLine());
+//double sayi, toplam = 0;
+//for (int i = 1; i <= donguLimit; i++)
+//{
+//	// Sayı isteyeceksiniz
+//	Console.WriteLine("Sayıyı giriniz : ");
+//	//Gelen sayıyı sayi atayacaksın
+//	sayi= Convert.ToDouble(Console.ReadLine());
+//	//formül toplam=((sayi*20)/100)+sayi;
+//	toplam = sayi * 20 / 100 + sayi;
+//	//Formül 2 toplam = sayi * 120 / 100;
+//	//toplam = sayi * 120 / 100;
+//	//Formüle ekrana yazdıracaksınız
+//	Console.WriteLine(toplam);
+//}
+#endregion
+#region  Döngüler
+/*
+ For (int a = 0; a<=10; a++)
+ while(a<=10)
+ do while (a<=10)
+ foreach
+ */
+
+//char karekter;
+//for (karekter ='a';  karekter <='z'; karekter++)
+//{
+//	Console.Write(karekter + "\n");
+
+//}
+#endregion
+#region Koşullar
+/*
+ * 
+ * if else koşullarında koşullarda program gezerken
+ * koşul sağlamasa bile kpşula uğrayarak hareket eder
+ * if else if else 
+ */
+#endregion
+
+/*
+ *  Stringteki a harfinin metinde kaç kere geçtiğini bulan programı yazınız.
+ */
+
+#region Son For Döngü Örneği
+//int ts=0, cs=0;
+//for (int i = 1; i <= 100; i++)
+//{
+//	if (i % 2 == 0)
+//	{
+//		cs++;
+//	}
+//	else
+//	{
+//		ts++;
+//	}
+//}
+//Console.WriteLine(ts);
+//// ts adeti
+//Console.WriteLine(cs);
+//// cs Adeti ekrana yazdırılacak.
+#endregion
+#region While
+//int toplam = 0;
+//int x = 1;
+//while (x <= 10) 
+//{
+//    //Console.WriteLine("Toplam = " + toplam + ("+") + x);
+//    //Console.WriteLine($"Toplam = {toplam} + {x}");
+//    Console.WriteLine("Toplamları değer : {0}+{1}={2}", toplam, x, toplam+x);
+//    toplam =toplam + x;
+//    x++;
+//}
+///// toplam = toplam+x; 
+//Console.WriteLine("Genel Toplam : " + toplam);
+//Random rnd = new Random();
+//int tahmin = 0, tutulan, sayac = 0;
+//tutulan = rnd.Next(1, 10);
+//while (tahmin != tutulan)
+//{
+//    sayac++;
+//    Console.WriteLine("Sayı Giriniz : ");
+//    tahmin=Convert.ToInt32(Console.ReadLine());
+//    if (tahmin > tutulan)
+//    {
+//        Console.WriteLine("Sayıyı Küçült");
+//    }
+//    else if (tahmin < tutulan)
+//    {
+//        Console.WriteLine("Sayıyı Büyült");
+//    }
+//}
+//Console.WriteLine("{0}. hakkınızda bildiniz.", sayac);
+//Console.WriteLine("Tebrikler Bildiniz");
+
+//bool durum = true;
+//int? sayi = null;
+//while (durum!=true)
+//{
+//	if (sayi % 5 == 0 && sayi % 7 == 0)//sayi % 5 ==0  sayi & 7==0
+//	{
+//		durum = true;
+//	}
+//	else
+//	{
+//		durum = false;
+//	}
+//}
+//while (sayi % 5 != 0 && sayi % 7 != 0)
+//{
+
+//}
+
+/*
+ Bir kahve makinemiz var bu kahve makinesinde
+ Seçim yaptıracağız.
+ Çay,Kahve,Americano,Türk Kahvesi
+ Kahve Alırken Bakiye 0 sa hata verecek
+ Kahve Tutarları Çay = 20 Filtre Kahve=90 Americano =15 Türk Kahvesi = 200
+ */
+//int bakiye = 0;
+//bool x = true;
+
+
+//while (x == true)
+//{
+//    Console.WriteLine($"Seçim yapınız \n1-)çay=20TL \n2-)filtre kahve=90TL \n3-)americano=15TL \n4-)türk kahvesi=200TL \n5-)Bakiye Yükle Mevcut Bakiyeniz : {bakiye} TL\n6-)Çıkış Yap");
+//    int seçim = Convert.ToInt32(Console.ReadLine());
+//    switch (seçim)
+//    {
+//        case 1:
+//            if (bakiye >= 20)
+//            {
+//                Console.WriteLine("Çay İstediniz Afiyet Olsun.");
+//                bakiye -= 20;
+//            }
+//            else
+//            {
+//                Console.WriteLine("Bakiye Yetersiz bakiye yükleyiniz");
+//            }
+//            break;
+//        case 2:
+//            if (bakiye >= 90)
+//            {
+//                Console.WriteLine("filtre kahve İstediniz Afiyet Olsun.");
+//                bakiye -= 90;
+//            }
+//            else
+//            {
+//                Console.WriteLine("Bakiye Yetersiz bakiye yükleyiniz");
+//            }
+//            break;
+//        case 3:
+//            if (bakiye >= 15)
+//            {
+//                Console.WriteLine("Americano İstediniz Afiyet Olsun.");
+//                bakiye -= 15;
+//            }
+//            else
+//            {
+//                Console.WriteLine("Bakiye Yetersiz bakiye yükleyiniz");
+//            }
+//            break;
+//        case 4:
+//            if (bakiye >= 200)
+//            {
+//                Console.WriteLine("Türk Kahvesi İstediniz Afiyet Olsun.");
+//                bakiye -= 200;
+//            }
+//            else
+//            {
+//                Console.WriteLine("Bakiye Yetersiz bakiye yükleyiniz");
+//            }
+//            break;
+//        case 5:
+//            Console.WriteLine("yükleyeceğiniz bakiye tutarını giriniz");
+//            int yüklenenbakiye = Convert.ToInt32(Console.ReadLine());
+//            bakiye = yüklenenbakiye;
+//            break;
+//        case 6:
+//            x = false;
+//            break;
+//        default:
+//            Console.WriteLine("yanlış değer girdiniz.");
+//            break;
+//    }
+//}
+#endregion
+#region Do While
+// Tanımlamalar olacak.
+//Console.Write("Bir tek sayı giriniz : ");
+//int a = Convert.ToInt32(Console.ReadLine());
+//do
+//{
+//    // Koşuldaki işlemler burada yapılacak.
+//    Console.WriteLine(a);
+//    a += 2;
+
+//} while (a <= 100); //  koşul buraya yazılacak.
+//int wholeNumber = 1, total = 0;
+//do
+//{
+//    Console.Write("{0}+{1}", total, wholeNumber);
+//    total += wholeNumber;
+//    wholeNumber++;
+//    Console.Write("={0}\n",total);
+//} while (wholeNumber<=100);
+
+
+
+
+/*
+ Bir Vize Final ve Proje NNotlarının ortalamasını alacak uygulama yazacaksınız
+ il açacağınız döngü for oda ne kadar öğrenci o kadar not girelecek
+ ikinci açılacak döngü ne kadar vize ve final  not ortalaması belirlenecek.
+ son do while da kaç kıişi kaç kişi geçti bunun bilgisini yazcak uygulamayı yazınız.
+ 
+ */
+// Seçim Yapıldı
+//for (int i = 0; i <= amount; i++)
+//{
+//    string vmetot = "";
+//    string fmetot = "";
+//    string pmetot = "";
+//    while  (i<=amount)
+//    {
+//        vmetot.Trim(",")
+//    }
+//}
+
+/*
+ * tip[] sequence;
+ */
+//int[] dizi; // Buradaki dizinin boyutu belli değildir
+//// dizi eklendiği eleman kadar dizi boyutunu oluşturur.
+//string[] sdizi; // Buradaki dizinin boyutu belli değildir
+//// dizi eklendiği eleman kadar dizi boyutunu oluşturur.
+//int[] bdizi=new int[100]; // Dizi Boyutu Bellidir.
+//// Belirlenen Dizi kadar alan kaplar.
+////1,2,3,4,5,6,7,8,9,0,null,null,null
+//string[] Names = { "Ali", "Ahmet", "Mehmet", "Cengiz" };
+//int[] wholeNumber2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+int available = 0;
+Console.WriteLine("Sınıf Mevcudu Giriniz : ");
+available = Convert.ToInt32(Console.ReadLine());
+string[] studentClass = new string[available];
+for (int i = 0;i < available; i++)
+{
+    Console.WriteLine("Öğrenci Adını Giriniz : ");
+    studentClass[i] = Console.ReadLine();
+}
+/*
+  Döngü başlıyr döngünün başlangı sayısı 0 dan başlıyor 
+  kullanıcıdan girilen mevcut kadar gidiyor.
+  Kullanıcıdan girilecek olan mevcut kadar öğrenci bilgilerini istiyoruz.
+  Her girilen öğrenci değerleri örnek
+  [i] = Dizideki 0'ncı eleman = Haşmet Tazegül
+  [i] = Dizideki 1'nci eleman = Ferhat Aydın
+  [i] = Dizideki 2'nci eleman = Umut Türk
+  Buradaki bahsi geçen i hem döngünün mevcuta yaklaştığı değeri hem de
+  diziye eklenen elamının dizideki kaçıncı elemana denk geldiğini gösteriyor.
+ */
+
+Console.Clear();
+foreach (var item in studentClass)
+{
+    Console.WriteLine("Öğrencinin Adı Soyadı : " + item);
+}
 #endregion
 Console.ReadKey();
