@@ -1270,15 +1270,15 @@ tutulan sayı ve kacınca bildiği cıkacak
 ////1,2,3,4,5,6,7,8,9,0,null,null,null
 //string[] Names = { "Ali", "Ahmet", "Mehmet", "Cengiz" };
 //int[] wholeNumber2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
-int available = 0;
-Console.WriteLine("Sınıf Mevcudu Giriniz : ");
-available = Convert.ToInt32(Console.ReadLine());
-string[] studentClass = new string[available];
-for (int i = 0;i < available; i++)
-{
-    Console.WriteLine("Öğrenci Adını Giriniz : ");
-    studentClass[i] = Console.ReadLine();
-}
+//int available = 0;
+//Console.WriteLine("Sınıf Mevcudu Giriniz : ");
+//available = Convert.ToInt32(Console.ReadLine());
+//string[] studentClass = new string[available];
+//for (int i = 0;i < available; i++)
+//{
+//    Console.WriteLine("Öğrenci Adını Giriniz : ");
+//    studentClass[i] = Console.ReadLine();
+//}
 /*
   Döngü başlıyr döngünün başlangı sayısı 0 dan başlıyor 
   kullanıcıdan girilen mevcut kadar gidiyor.
@@ -1291,10 +1291,264 @@ for (int i = 0;i < available; i++)
   diziye eklenen elamının dizideki kaçıncı elemana denk geldiğini gösteriyor.
  */
 
-Console.Clear();
-foreach (var item in studentClass)
+//Console.Clear(); // Consol ekranını temizlemek için kullanırız.
+//for (int i = 0; i < studentClass.Length; i++)
+//{
+//    Console.WriteLine("Öğreci Adı Soyadı" + studentClass[i]);
+//}
+//foreach (var item in studentClass)
+//// var bir değişten türüdür
+//// tip olarak ta değer olarakta sürekli değişkenlik gösterir.
+//// ortamların kaypak delikanlısı.
+//// in içinde demek.
+//// model kapsayıcıı studentClasstır.
+//// foreach döngüsü modeli referans alarak döngü oluşturur.
+
+//{
+//    Console.WriteLine("Öğrencinin Adı Soyadı : " + item);
+//    // item ana referanstan aldığı tek değeri her döngü değiştiğinde ekrana yazarak bir alt satıra iner.
+//}
+//int pozitif = 0;
+//int negatif = 0;
+//int notr = 0;
+//Random rnd=new Random();
+//int[] sayilar = new int[20];
+//for (int i = 0;i < 20; i++)
+//{
+//    sayilar[i] = rnd.Next(-100, 100);
+//}
+//foreach (var item in sayilar)
+//{
+//    Console.WriteLine(item);
+//    if (item > 0)
+//    {
+//        pozitif++;
+//    }
+//    else if (item < 0)
+//    {
+//        negatif++;
+//    }
+//    else
+//    {
+//        notr++;
+//    }
+//}
+//Console.WriteLine("Pozitif Sayı Adeti : " + pozitif);
+//Console.WriteLine("Negatif Sayı Adeti : " + negatif);
+//Console.WriteLine("Notr Sayı Adeti : " + notr);
+//using System.Collections;
+//int[] myArray = new int[] { 1,2,3,4,5 };
+//int elemansayisi = myArray.Length;
+//Console.WriteLine("Değer Ataması Yapınız");
+//int sayi =int.Parse(Console.ReadLine());
+//if (elemansayisi!=0)
+//{
+//    myArray[elemansayisi - 1] = sayi;
+//}
+//else
+//{
+//    myArray[elemansayisi] = sayi;
+//}
+//foreach (var item in myArray)
+//{
+//    Console.WriteLine(item);
+//}
+using System.Collections;
+
+//int rehberMevcut = 0, secim = 0;
+
+//Console.WriteLine("Kaç Kişi Ekleyeceksiniz ?");
+//rehberMevcut = int.Parse(Console.ReadLine());
+//string[] numaralar = new string[rehberMevcut];
+//string[] kisiler = new string[rehberMevcut];
+//string[] butunDizi = new string[rehberMevcut];
+
+//basla:
+//Console.WriteLine("1-) Kişi Ekle");
+//Console.WriteLine("2-) Kişi Listele");
+//secim = int.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//    case 1:
+//        for (int i = 0; i < rehberMevcut; i++)
+//        {
+
+//            Console.WriteLine("Ad Soyad : ");
+//            string name = Console.ReadLine();
+//            Console.WriteLine("Telefon Numarası : ");
+//            string number = Console.ReadLine();
+//            kisiler[i] = name;
+//            numaralar[i] = number;
+//            butunDizi[i] = name + " " + number;
+//            Console.Clear();
+//        }
+//        goto basla;
+//     case 2:
+//        for (int i = 0; i < kisiler.Length; i++)
+//        {
+//            Console.WriteLine("Ad Soyad: {0} - Numara: {1}", kisiler[i], numaralar[i]);
+//        }
+//        foreach (var item in butunDizi)
+//        {
+//            Console.WriteLine("Ad Soyad Numara : {0} ", item);
+//        }
+//        break;
+//    default:
+//        break;
+//}
+
+//string[] ogrno = { "101", "102", "103", "104", "105", "106", "107", "108", "109", "110" };
+//string[] isim = { "Ali", "Veli", "Hasan", "Kemal", "Can", "Ahmet", "Mehmet", "Enis", "Bilal", "Burak" };
+//string[] telefon = { "111", "222", "333", "444", "555", "666", "777", "888", "999", "1000" };
+//string[] mail = { "aaaa@aaa.aa", "bbbbb@bbb.bb", "cccc@ccc.cc", "dddd@ddd.dd", "eeee@eee.ee", "ffff@eee.ee", "gggg@eee.ee", "hhhh" };
+//Console.WriteLine("Kişi No'yu Giriniz : ");
+//string aranan = Console.ReadLine();
+//int no = Array.IndexOf(ogrno, aranan);
+//isim[no] = null;
+//Console.WriteLine("Aranan Kişi {0}\nTelefonu:{1}\nEmail{2}", isim[no], telefon[no], mail[no]);
+//int ogrnosayisi = ogrno.Length;
+//// ArrayList
+//ArrayList list = new ArrayList();
+
+//// List
+//List<string> liste = new List<string>();
+
+//int rehberMevcut = 0, secim = 0;
+
+//Console.WriteLine("Kaç Kişi Ekleyeceksiniz ?");
+
+
+//rehberMevcut = int.Parse(Console.ReadLine());
+//string[] numaralar = new string[rehberMevcut];
+//string[] kisiler = new string[rehberMevcut];
+
+//basla:
+//Console.WriteLine("1-) Kişi Ekle");
+//Console.WriteLine("2-) Kişi Listele");
+//Console.WriteLine("3-) Kişi Güncelle");
+//secim = int.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//    case 1:
+
+//        for (int i = 0; i < rehberMevcut; i++)
+//        {
+
+//            Console.WriteLine("Ad Soyad : ");
+//            string name = Console.ReadLine();
+//            Console.WriteLine("Telefon Numarası : ");
+//            string number = Console.ReadLine();
+
+//            kisiler[i] = name;
+//            numaralar[i] = number;
+//            Console.Clear();
+//        }
+//        goto basla;
+//        break;
+//    case 2:
+
+//        foreach (var item in kisiler.Select((value, i) => new { value, i }))
+//        {
+//            Console.WriteLine("Ad Soyad: {0} - Numara: {1}", item.value, numaralar[item.i]);
+//        }
+//        break;
+//    case 3:
+//        for (int i = 0; i < kisiler.Length; i++)
+//        {
+//            Console.WriteLine("{0} -) {1} {2}", i, kisiler[i], numaralar[i]);
+
+//        }
+//        Console.WriteLine("Hangi kişiyi güncellemek istiyorsunuz ?\n\nÇıkış ypamak için 'çıkış' Yazınız");
+//        string kisiSecim = Console.ReadLine();
+//        if (kisiSecim == "çıkış")
+//        {
+//            goto basla;
+//        }
+//        else
+//        {
+
+//            int kisiSecim2 = Convert.ToInt32(kisiSecim);
+
+//            Console.WriteLine("Yeni Ad: ");
+//            string newName = Console.ReadLine();
+//            Console.WriteLine("Yeni Numara: ");
+//            string newPhone = Console.ReadLine();
+
+
+
+//            kisiler[kisiSecim2] = newName;
+//            numaralar[kisiSecim2] = newPhone;
+
+//            Console.Clear();
+//            Console.WriteLine("Güncelleme işlemi başarılı!");
+//            goto basla;
+//        }
+
+//    default:
+//        break;
+//}
+decimal bakiye = 0;
+int girisHak = 3;
+string[] menu ={"Cola","Karemel Frapp" };
+decimal[] fiyat ={20,65 };
+int secim;
+int menuSayisi = menu.Length;
+int fiyatSayisi = menu.Length;
+string userName="admin", password="admin";
+Console.WriteLine("1Admin Giriş\n2-Müşteri Giriş : ");
+secim=int.Parse(Console.ReadLine());
+if (secim == 1)
 {
-    Console.WriteLine("Öğrencinin Adı Soyadı : " + item);
+	for (int i = 0; i < girisHak; i++)
+	{
+		Console.WriteLine("Kullanıcı Adınız : ");
+		string user=Console.ReadLine();
+		Console.WriteLine("Şifreniz : ");
+		string pass=Console.ReadLine();
+		if (userName == user && password == pass)
+		{
+			Basla:
+			Console.WriteLine("1- Ürün Ekle\n2- Ürün Düzenle\n3- Ürun Listele\n0- Çıkış Yap");
+			secim = int.Parse(Console.ReadLine());
+			switch (secim)
+			{
+				case 1:
+					Console.WriteLine("Ürün Adını Giriniz : ");
+					string deger=Console.ReadLine();
+					menu.Append(deger);
+                    Console.WriteLine("Ürün Fiyatını Giriniz : ");
+					decimal pdeger=decimal.Parse(Console.ReadLine());
+					fiyat.Append(pdeger);
+					goto Basla;
+				case 2:
+					for (int x = 0; x < menu.Length; x++)
+					{
+						Console.WriteLine("Menu Numarası {0}\t Ürün Adı : {1}", x, menu[i]);
+					}
+					int secim2 = int.Parse(Console.ReadLine());
+					Console.WriteLine("Güncellenen Ürün Adı : ");
+					menu[secim2] = Console.ReadLine();
+					Console.WriteLine("Güncellenen Ürün Fiyatı : ");
+					fiyat[secim2] =decimal.Parse(Console.ReadLine());
+					goto Basla;
+				case 3:
+                    for (int x = 0; x < menu.Length; x++)
+                    {
+                        Console.WriteLine("Menu Numarası {0}\t Ürün Adı : {1}\t Ürün Fiyatı {2}TL", x, menu[x], fiyat[x]);
+                    }
+                    goto Basla;
+				case 0:
+					break;
+				default:
+					break;
+			}
+		}
+	}
+	Console.WriteLine("Yanlış İşlem Yaptınız.");
+}
+else
+{
+
 }
 #endregion
 Console.ReadKey();
