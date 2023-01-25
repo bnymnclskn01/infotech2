@@ -1517,8 +1517,7 @@ if (secim == 1)
 					Array.Resize(ref menu, 3);
 					Console.WriteLine("Ürün Adını Giriniz : ");
 					string deger=Console.ReadLine();
-					menu.Append(deger);
-					//menu[menu.Length - 1] = deger;
+					menu[menu.Length - 1] = deger;
 					Array.Resize(ref fiyat, 3);
                     Console.WriteLine("Ürün Fiyatını Giriniz : ");
 					decimal pdeger=decimal.Parse(Console.ReadLine());
