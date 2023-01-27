@@ -1353,9 +1353,6 @@ tutulan sayı ve kacınca bildiği cıkacak
 //{
 //    Console.WriteLine(item);
 //}
-using System.Collections;
-using System.Linq;
-
 //int rehberMevcut = 0, secim = 0;
 
 //Console.WriteLine("Kaç Kişi Ekleyeceksiniz ?");
@@ -1565,15 +1562,464 @@ using System.Linq;
  Aynı zamanda dizilerde silme işlemi yerine değeri
  null değerine atama işlemi yapılır.
  */
-string[] dizi = new string[] {"Pop Kek","Instense","Eti Cin" };
-Array.Resize(ref dizi, 7);
-Console.WriteLine("Lütfen Ürün Giriniz : ");
-string deger = Console.ReadLine();
-dizi[dizi.Length - 1] = deger;
-Console.Clear();
-for (int i = 0; i < dizi.Length; i++)
-{
-    Console.WriteLine(dizi[i]);
-}
+//string[] dizi = new string[] {"Pop Kek","Instense","Eti Cin" };
+//Array.Resize(ref dizi, 4);
+//Console.WriteLine("Lütfen Ürün Giriniz : ");
+//string deger = Console.ReadLine();
+//dizi[dizi.Length - 1] = deger;
+//Console.Clear();
+//for (int i = 0; i < dizi.Length; i++)
+//{
+//    Console.WriteLine(dizi[i]);
+//}
+#region Çok Boyutlu Diziler
+using System.Collections;
+
+//string[,] dizi2;
+//dizi2 = new string[,] 
+//{ 
+//    { "a", "1", }, 
+//    { "b", "2", }, 
+//    { "c", "3" }, 
+//    { "d", "4" }
+//};
+//string[,] dizi3;
+//dizi3 = new string[,]
+//{
+//    { "a", "1","2" },
+//    { "b", "2","3" },
+//    { "c", "3","4" },
+//    { "d", "4","5" }
+//};
+//Console.WriteLine(dizi2[0, 0] +","+dizi2[0, 1]);
+//Console.WriteLine(dizi2[1, 0] + "," + dizi2[1, 1]);
+//Console.WriteLine(dizi2[2, 0] + "," + dizi2[2, 1]);
+//Console.WriteLine(dizi2[3, 0] + "," + dizi2[3,1]);
+//Console.WriteLine(dizi2[4, 0] + "," + dizi2[4, 1]);
+//int[,] dizi = new int[3,3];
+//Random rnd=new Random();
+//for (int i = 0; i < 3; i++)
+//{
+//	for (int j = 0; j < 3; j++)
+//	{
+//		dizi[i, j] = rnd.Next(10);
+//		Console.Write(dizi[i, j] + " ");
+//	}
+//	Console.WriteLine();
+//}
+//for (int n = 0; n < 3; n++)
+//{
+//	int sutun_toplam = 0;
+//	int satir_toplam = 0;
+//	for (int a = 0; a < 3; a++)
+//	{
+//		satir_toplam += dizi[n, a];
+//		sutun_toplam += dizi[a, n];
+//	}
+//	Console.WriteLine("{0}Satırın Toplamı\t:{1}\t\t{2} Sütunun Toplamı\t: {3}", (n + 1), satir_toplam, (n + 1), sutun_toplam);
+//    Console.WriteLine("{0}Satırın Ortalama\t:{1}\t\t{2} Sütunun Ortalama\t: {3}", (n + 1), satir_toplam/3, (n + 1), sutun_toplam/3);
+//}
 #endregion
+
+ArrayList list = new ArrayList();
+/*
+ * ArrayList dizileri boyut sınırladırılması yoktur.
+ * Ekleme Güncelleme Silme İşlemleri Yapılır.
+ * Aynı zamanda da  Ekleme yapmak için değişken tipli dizilerdeki gibi yeniden boyutlandırma yapmamıza gerek
+ * yok.
+ */
+//list.Add("Ahmet");
+//list.Add(123456);
+//list.Add(true);
+//foreach (var item in list)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+/*
+ * Random bir  değer oluşturacağız oluşan her bir sayı
+ * 50 küçükse
+ * kucuksayılar Array'a atılacak
+ * 50'den büyüksede
+ * Büyük Sayılar Array'a eklenecek.
+ * İki Array'ide ekrana yazdıracağız.
+ * 2- Forunda dönme değeri 15
+ */
+
+//ArrayList k=new ArrayList();
+//ArrayList b=new ArrayList();
+//Random rnd = new Random();
+//for (int i = 0; i <= 15; i++)
+//{
+//    int sayi = rnd.Next(49);
+//    k.Add(sayi);
+//}
+//for (int i = 0; i <= 15; i++)
+//{
+//    int sayi = rnd.Next(51, 100);
+//    b.Add(sayi);
+//}
+//foreach (var item in k)
+//{
+//    Console.WriteLine("Küçük Sayılar : "+ item);
+//}
+//Console.WriteLine("************************************");
+//foreach (var item in b)
+//{
+//    Console.WriteLine("Büyük Sayılar : " + item);
+//}
+
+//char secim;
+//ArrayList Personel = new ArrayList();
+//Console.BackgroundColor= ConsoleColor.Green;
+//Console.Clear();
+//Console.Title = "INFOTECH ACADEMY MCSD EĞİTİMİ";
+//Console.WriteLine("=================================================");
+//Console.WriteLine("Infotech Academy Otomasyonuna Hoş Geldiniz");
+//Console.WriteLine("=================================================");
+//Console.WriteLine("1-) Personel Ekle\n2-) Personel Güncelle\n3-) Personel Listele\n4-) Personel Sil\n5-)Çoklu Personel Ekle");
+//secim=char.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//	case '1':
+//		Console.WriteLine("Lütfen Persone Adını Giriniz : ");
+//		Personel.Add(Console.ReadLine());
+//		break;
+//	case '2':
+//		Console.WriteLine("Personel Listesinden lütfen güncellemek istediğiniz kişiyi yada veriyi seçiniz: ");
+//		int pSecim = Convert.ToInt32(Console.ReadLine());
+//		Console.WriteLine("Yeni Değer Giriniz : ");
+//		Personel[pSecim]= Console.ReadLine();
+//		break;
+//	case '3':
+//		foreach (var item in Personel)
+//		{
+//			Console.WriteLine(item);
+//		}
+//		break;
+//	case '4':
+//        Console.WriteLine("Personel Listesinden lütfen silmek istediğiniz kişiyi yada veriyi seçiniz: ");
+//        int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//		Personel.RemoveAt(pSecim2);
+//		Console.WriteLine("Personel Silindi");
+//        break;
+//	default:
+//		break;
+//}
+#endregion
+#region Ferhat Aydın
+//char secim;
+//string cizgi = "=============================================";
+//ArrayList personelList = new ArrayList();
+//Console.Clear(); // program her başladığında konsol sıfırlanıyor
+//Console.Title = "INFOTECH ACADMEY MCSD EĞİTİMİ";
+//Console.WriteLine(cizgi);
+//Console.WriteLine("Infotech Academy Otomasyonuna Hoş Geldiniz");
+//Console.WriteLine(cizgi);
+//basla:
+//Console.WriteLine("1-) Personel Ekle\n2-) Personel Güncelle\n3-) Personel Listele\n4-) Personel Sil\n5-) Çoklu Personel Ekle");
+//secim = char.Parse(Console.ReadLine());
+
+//switch (secim)
+//{
+
+//    case '1':
+//        Console.WriteLine("Lütfen Personel Adı Giriniz : ");
+//        string personelName = Console.ReadLine();
+//        personelList.Add(personelName);
+//        Console.Clear();
+//        Console.WriteLine(cizgi);
+//        Console.WriteLine("{0} isminde personel listeye eklendi!", personelName);
+//        Console.WriteLine(cizgi);
+//        goto basla;
+//    case '2':
+//    personelGuncelleme:
+//        if (personelList.Count <= 0)
+//        {
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Peronel Listesi Boş Olduğu İçin Güncelleme Yapılamadı!");
+//            Console.WriteLine(cizgi);
+//            goto basla;
+//        } // Veri tabanında eğer veri yoksa başlangıç ekranına geri dön
+//        for (int i = 0; i < personelList.Count; i++)
+//        {
+//            Console.WriteLine("{0}. {1}", i, personelList[i]);
+//        }
+
+//        Console.WriteLine("Lütfen güncellemek istediğiniz personelin numarasını giriniz.");
+
+//        int pSecim = int.Parse(Console.ReadLine());
+
+//        var personel = personelList[pSecim];
+//        if (personel != null)
+//        {
+//            string newPersonelName = Console.ReadLine();
+//            personelList[pSecim] = newPersonelName;
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Başarılı bir şekilde {0} isimli personelin adını {1} olarak güncellediniz.", personel, newPersonelName);
+//            Console.WriteLine(cizgi);
+//            goto basla;
+//        }
+//        else
+//        {
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Güncellemek istediğiniz personel bulunamadı lütfen tekrar seçiniz!");
+//            Console.WriteLine(cizgi);
+//            goto personelGuncelleme; // eğer veri yanlış girildiyse veriyi tekrardan girmeisini istiyoruz
+//        }
+//    case '3':
+//        if (personelList.Count <= 0)
+//        {
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Peronel Listesi Boş Olduğu İçin Listeleme Yapılamadı!");
+//            Console.WriteLine(cizgi);
+//            goto basla;
+//        } // Veri tabanında eğer veri yoksa başlangıç ekranına geri dön
+//        for (int i = 0; i < personelList.Count; i++) // personel listesini çağırıyoruz
+//        {
+//            Console.WriteLine("{0}. {1}", i, personelList[i]);
+//        }
+//        goto basla;
+//    case '4':
+//    personelSil:
+//        if (personelList.Count <= 0)
+//        {
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Peronel Listesi Boş Olduğu İçin Silme Yapılamadı!");
+//            Console.WriteLine(cizgi);
+//            goto basla;
+//        } // Veri tabanında eğer veri yoksa başlangıç ekranına geri dön
+//        for (int i = 0; i < personelList.Count; i++) // personel listesini çağırıyoruz
+//        {
+//            Console.WriteLine("{0}. {1}", i, personelList[i]);
+//        }
+
+//        Console.WriteLine("Lütfen silmek istediğiniz personelin numarasını giriniz.");
+
+//        int pSilmeSecim = int.Parse(Console.ReadLine()); // silmek istediğimiz üyenin index'ini belirliyoruz
+
+//        var personelDelete = personelList[pSilmeSecim];
+//        if (personelDelete != null)
+//        {
+//            personelList.RemoveAt(pSilmeSecim); // Personel Listesindeki Üyenin Index'ini siliyoruz.
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Başarılı bir şekilde {0} isimli personeli sildiniz!", personelDelete);
+//            Console.WriteLine(cizgi);
+//            goto basla;
+//        }
+//        else
+//        {
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("Silmek istediğiniz personel bulunamadı lütfen tekrar seçiniz!");
+//            Console.WriteLine(cizgi);
+//            goto personelSil;
+//        };
+//    case '5':
+//        Console.WriteLine("Kaç adet personel eklemek istiyorsunuz ?");
+//        int personelMiktar = int.Parse(Console.ReadLine());
+
+//        for (int i = 0; i < personelMiktar; i++)
+//        {
+//            Console.WriteLine("Personel Adı : ");
+//            string personelAd = Console.ReadLine();
+//            personelList.Add(personelAd);
+//            Console.Clear();
+//            Console.WriteLine(cizgi);
+//            Console.WriteLine("{0} isimli personel eklendi!", personelAd);
+//            Console.WriteLine(cizgi);
+//        }
+//        goto basla;
+//    default:
+//        break;
+//}
+#endregion
+#region Süleyman Yılmaz
+//char secim;
+//ArrayList personel = new ArrayList();
+//Console.Title = "infotech academy";
+//Console.BackgroundColor = ConsoleColor.DarkBlue;
+//Console.WriteLine("============================================");
+//Console.WriteLine("academy otomasyonuna hosgeldiniz");
+//Console.WriteLine("=============================");
+//Console.WriteLine("ilk girisiniz oldugundan lutfen personel ekleyiniz");
+//Console.WriteLine("Personel Adini Giriniz: ");
+//personel.Add(Console.ReadLine());
+//Basla:
+//Console.WriteLine("1-) Personel Ekle\n2-) Personel Guncelle\n3-) Personel Listele\n4-) Personel Sil\n5-) Coklu Personel Ekle");
+//secim = char.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//    case '1':
+//        Console.WriteLine("Personel Adini Giriniz: ");
+//        personel.Add(Console.ReadLine());
+//        goto Basla;
+//    case '2':
+//        Console.WriteLine("Guncellemek istediginiz veriyi seciniz: ");
+//        int pSecim = Convert.ToInt32(Console.ReadLine());
+//        if (pSecim < personel.Count)
+//        {
+//            Console.WriteLine("Yeni deger giriniz: ");
+//            personel[pSecim] = Console.ReadLine();
+//        }
+//        else
+//        {
+//            Console.WriteLine("hatali bir secim yaptiniz, bastan basliyoruz");
+//        }
+//        goto Basla;
+//    case '3':
+//        foreach (var item in personel)
+//        {
+//            Console.WriteLine(item);
+//        }
+//        goto Basla;
+//    case '4':
+//        Console.WriteLine("Silmek istediginiz veriyi seciniz: ");
+//        int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//        if (pSecim2 <= personel.Count)
+//        {
+//            personel.RemoveAt(pSecim2);
+//            Console.WriteLine("Personel Silindi");
+//        }
+//        else
+//        {
+//            Console.WriteLine("hatali bir secim yaptiniz, bastan basliyoruz");
+//        }
+//        goto Basla;
+//    case '5':
+//        Console.WriteLine("eklemek istediginiz personel sayisini giriniz: ");
+//        int ekkapasite = int.Parse(Console.ReadLine());
+//        for (int i = 0; i < ekkapasite; i++)
+//        {
+//            Console.WriteLine("Personel Adini Giriniz: ");
+//            personel.Add(Console.ReadLine());
+//        }
+//        goto Basla;
+//    default:
+//        break;
+//}
+#endregion
+#region Umut Türk
+//char secim;
+//ArrayList Personel = new ArrayList();
+//Console.Title = "UMUT";
+//Console.BackgroundColor = ConsoleColor.DarkYellow;
+//Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//Console.WriteLine("Selamın Aleyküm Başkan");
+//Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//basla:
+//Console.WriteLine("1-) Personel Ekleme\n2-) Personel Güncelleme\n3-) Personel Listeleme\n4-) Personel Sil\n5-) Toplu Personel Ekleme");
+//secim = char.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//    case '1':
+//        Console.WriteLine("Lütfen Personel Adını Giriniz : ");
+//        string personelName = Console.ReadLine();
+//        Personel.Add(personelName);
+//        Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//        Console.WriteLine("Başarıyla Eklediniz.");
+//        Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//        goto basla;
+
+//    case '2':
+//        if (Personel.Count == 0)
+//        {
+//            Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//            Console.WriteLine("Listede Personel Yoktur.");
+//            Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Personel Listesinden Lütfen Güncellemek İstediğiniz Kişiyi yada Veriyi Seçiniz: ");
+//            int pSecim = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("Yeni Değer Giriniz : ");
+//            Personel[pSecim] = Console.ReadLine();
+
+
+//        }
+//        break;
+//    case '3':
+
+//        if (Personel.Count == 0)
+//        {
+//            Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//            Console.WriteLine("Listede personel yoktur.");
+//            Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-+-");
+//        }
+//        else
+//        {
+//            foreach (var item in Personel)
+//            {
+//                Console.WriteLine(item);
+//            }
+//        }
+//        Console.Clear();
+//        break;
+//    case '4':
+//        if (Personel.Count == 0)
+//        {
+//            Console.WriteLine("Listede personel yoktur.");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Personel Listesinden lütfen silmek istediğiniz kişiyi yada veriyi seçiniz: ");
+//            int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//            Personel.RemoveAt(pSecim2);
+//            Console.WriteLine("Personel Silindi");
+//        }
+
+//        goto basla;
+//    case '5':
+//        Console.WriteLine("kaç adet personel ekleyeceksınız? : ");
+//        int x = Convert.ToInt32(Console.ReadLine());
+
+//        for (int i = 0; i < x; i++)
+//        {
+//            Console.WriteLine("Lütfen Personel Adını Giriniz : ");
+//            Personel.Add(Console.ReadLine());
+//        }
+//        break;
+//    default:
+//        Console.WriteLine("yanlış değer girdiniz.");
+//        break;
+//}
+#endregion
+ArrayList Marka = new ArrayList();
+ArrayList Model =new ArrayList();
+ArrayList MotorHacim=new ArrayList();
+ArrayList VitesTipi =new ArrayList();
+ArrayList YakitTipi=new ArrayList();
+char secim;
+/*
+ * Char Secim ilk kunumu Programa devam etmek istiyormusunuz istemiyormusunuz
+ * İstiyorsa döngü devam edecek
+ * istemiyorsa break kodu kırıp program sonlanacak
+ * Arabanın Markasını Modelini Motor Hacimini Vites Tipini ve Yakıt Tipini
+ * Gireceksiniz.
+ * Marka Listesi String
+ * Model Listesi String
+ * Vites Tipi String
+ * Motor Hacim int
+ * YakitTipi String
+ * olarak değer tipleri ayarlanacak.
+ * Araba Bilgisi Ekleme
+ * Araba Bilgisi Güncelleme
+ * Araba Bilgisi Silme
+ * Araba Bilgisi Arama
+ * Araba Bilgisi Çoklu Ekleme
+ * Araba Bilgisi Çoklu Güncelleme
+ * Araba Bilgisi Çoklu Silme
+ * İşlemleri yapılacak.
+ * Artı olarak Bir Koşulunuzda Yeni dizi ekleme talebi oluşturacaksınız
+ * Oluşturulan dizide arabanın model yılını alacaksınız içeriye alınacak değerleri
+ * int tipinde olup
+ * Her Araba Bilgisine Karşılık Gelecek Şekilde Ekleme Güncelleme ve Silme İşlemi yaptıracaksınız. Index bilgisini araba markasını ve modelini çekip yıl dizine ona karşılık gelmesini istediğiniz indexe ekleyeceksiniz.
+ */
 Console.ReadKey();
