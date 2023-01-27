@@ -1488,70 +1488,92 @@ using System.Linq;
 //    default:
 //        break;
 //}
-decimal bakiye = 0;
-int girisHak = 3;
-string[] menu ={"Cola","Karemel Frapp" };
-decimal[] fiyat ={20,65 };
-int secim;
-int menuSayisi = menu.Length;
-int fiyatSayisi = menu.Length;
-string userName="admin", password="admin";
-Console.WriteLine("1Admin Giriş\n2-Müşteri Giriş : ");
-secim=int.Parse(Console.ReadLine());
-if (secim == 1)
-{
-	for (int i = 0; i < girisHak; i++)
-	{
-		Console.WriteLine("Kullanıcı Adınız : ");
-		string user=Console.ReadLine();
-		Console.WriteLine("Şifreniz : ");
-		string pass=Console.ReadLine();
-		if (userName == user && password == pass)
-		{
-			Basla:
-			Console.WriteLine("1- Ürün Ekle\n2- Ürün Düzenle\n3- Ürun Listele\n0- Çıkış Yap");
-			secim = int.Parse(Console.ReadLine());
-			switch (secim)
-			{
-				case 1:
-					Array.Resize(ref menu, 3);
-					Console.WriteLine("Ürün Adını Giriniz : ");
-					string deger=Console.ReadLine();
-					menu[menu.Length - 1] = deger;
-					Array.Resize(ref fiyat, 3);
-                    Console.WriteLine("Ürün Fiyatını Giriniz : ");
-					decimal pdeger=decimal.Parse(Console.ReadLine());
-					fiyat[fiyat.Length - 1] = pdeger;
-					goto Basla;
-				case 2:
-					for (int x = 0; x < menu.Length; x++)
-					{
-						Console.WriteLine("Menu Numarası {0}\t Ürün Adı : {1}", x, menu[i]);
-					}
-					int secim2 = int.Parse(Console.ReadLine());
-					Console.WriteLine("Güncellenen Ürün Adı : ");
-					menu[secim2] = Console.ReadLine();
-					Console.WriteLine("Güncellenen Ürün Fiyatı : ");
-					fiyat[secim2] =decimal.Parse(Console.ReadLine());
-					goto Basla;
-				case 3:
-                    for (int x = 0; x < menu.Length; x++)
-                    {
-                        Console.WriteLine("Menu Numarası {0}\t Ürün Adı : {1}\t Ürün Fiyatı {2}TL", x, menu[x], fiyat[x]);
-                    }
-                    goto Basla;
-				case 0:
-					break;
-				default:
-					break;
-			}
-		}
-	}
-	Console.WriteLine("Yanlış İşlem Yaptınız.");
-}
-else
-{
+//decimal bakiye = 0;
+//int girisHak = 3;
+//string[] menu ={"Cola","Karemel Frapp" };
+//decimal[] fiyat ={20,65 };
+//int secim;
+//int menuSayisi = menu.Length;
+//int fiyatSayisi = menu.Length;
+//string userName="admin", password="admin";
+//Console.WriteLine("1Admin Giriş\n2-Müşteri Giriş : ");
+//secim=int.Parse(Console.ReadLine());
+//if (secim == 1)
+//{
+//	for (int i = 0; i < girisHak; i++)
+//	{
+//		Console.WriteLine("Kullanıcı Adınız : ");
+//		string user=Console.ReadLine();
+//		Console.WriteLine("Şifreniz : ");
+//		string pass=Console.ReadLine();
+//		if (userName == user && password == pass)
+//		{
+//			Basla:
+//			Console.WriteLine("1- Ürün Ekle\n2- Ürün Düzenle\n3- Ürun Listele\n0- Çıkış Yap");
+//			secim = int.Parse(Console.ReadLine());
+//			switch (secim)
+//			{
+//				case 1:
+//					Array.Resize(ref menu, 3);
+//					Console.WriteLine("Ürün Adını Giriniz : ");
+//					string deger=Console.ReadLine();
+//					menu[menu.Length - 1] = deger;
+//					Array.Resize(ref fiyat, 3);
+//                    Console.WriteLine("Ürün Fiyatını Giriniz : ");
+//					decimal pdeger=decimal.Parse(Console.ReadLine());
+//					fiyat[fiyat.Length - 1] = pdeger;
+//					goto Basla;
+//				case 2:
+//					for (int x = 0; x < menu.Length; x++)
+//					{
+//						Console.WriteLine("Menu Numarası {0}\t Ürün Adı : {1}", x, menu[i]);
+//					}
+//					int secim2 = int.Parse(Console.ReadLine());
+//					Console.WriteLine("Güncellenen Ürün Adı : ");
+//					menu[secim2] = Console.ReadLine();
+//					Console.WriteLine("Güncellenen Ürün Fiyatı : ");
+//					fiyat[secim2] =decimal.Parse(Console.ReadLine());
+//					goto Basla;
+//				case 3:
+//                    for (int x = 0; x < menu.Length; x++)
+//                    {
+//                        Console.WriteLine("Menu Numarası {0}\t Ürün Adı : {1}\t Ürün Fiyatı {2}TL", x, menu[x], fiyat[x]);
+//                    }
+//                    goto Basla;
+//				case 0:
+//					break;
+//				default:
+//					break;
+//			}
+//		}
+//	}
+//	Console.WriteLine("Yanlış İşlem Yaptınız.");
+//}
+//else
+//{
 
+//}
+#endregion
+#region Dizi Tanımlamaları
+/*
+ Değişken Tipli Dizi tanımlamalarında
+ Dizide değişken tipi zorunlulu olduğu gibi
+ Dizinin boyutuda zorunludur.
+ Default Tanımlamalı dizilerde Varsayılan atamalarla
+ Dizi oluşturulduğunda yeni ekleme yapmak için
+ Yeniden Dizi Boyutlandırıılması yapılmak zorundadır.
+ Aynı zamanda dizilerde silme işlemi yerine değeri
+ null değerine atama işlemi yapılır.
+ */
+string[] dizi = new string[] {"Pop Kek","Instense","Eti Cin" };
+Array.Resize(ref dizi, 7);
+Console.WriteLine("Lütfen Ürün Giriniz : ");
+string deger = Console.ReadLine();
+dizi[dizi.Length - 1] = deger;
+Console.Clear();
+for (int i = 0; i < dizi.Length; i++)
+{
+    Console.WriteLine(dizi[i]);
 }
 #endregion
 Console.ReadKey();
