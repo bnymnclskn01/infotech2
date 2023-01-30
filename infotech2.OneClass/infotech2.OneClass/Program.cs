@@ -1573,6 +1573,7 @@ tutulan sayı ve kacınca bildiği cıkacak
 //    Console.WriteLine(dizi[i]);
 //}
 #region Çok Boyutlu Diziler
+using infotech2.OneClass.Classes;
 using System.Collections;
 
 //string[,] dizi2;
@@ -1991,12 +1992,13 @@ ArrayList list = new ArrayList();
 //        break;
 //}
 #endregion
-ArrayList Marka = new ArrayList();
-ArrayList Model =new ArrayList();
-ArrayList MotorHacim=new ArrayList();
-ArrayList VitesTipi =new ArrayList();
-ArrayList YakitTipi=new ArrayList();
-char secim;
+#region Ödev
+//ArrayList Marka = new ArrayList();
+//ArrayList Model =new ArrayList();
+//ArrayList MotorHacim=new ArrayList();
+//ArrayList VitesTipi =new ArrayList();
+//ArrayList YakitTipi=new ArrayList();
+//char secim;
 /*
  * Char Secim ilk kunumu Programa devam etmek istiyormusunuz istemiyormusunuz
  * İstiyorsa döngü devam edecek
@@ -2022,4 +2024,861 @@ char secim;
  * int tipinde olup
  * Her Araba Bilgisine Karşılık Gelecek Şekilde Ekleme Güncelleme ve Silme İşlemi yaptıracaksınız. Index bilgisini araba markasını ve modelini çekip yıl dizine ona karşılık gelmesini istediğiniz indexe ekleyeceksiniz.
  */
+#endregion
+#region Süleyman Yılmaz Ödev
+//ArrayList marka = new ArrayList();
+//ArrayList model = new ArrayList();
+//ArrayList motorHacim = new ArrayList();
+//ArrayList vitesTipi = new ArrayList();
+//ArrayList yakitTipi = new ArrayList();
+//ArrayList yeni1 = new ArrayList();
+//ArrayList kayitlar = new ArrayList();
+//object[] kayitt = new object[] { };
+//int[] tanimlama=new int[] { 0,1,2,3,4,5,6,7,8,9};
+////Array.Resize(ref kayitlar, 6);
+////string[] dizi = new string[] { "popkek", "intense", "eti cin" };
+////Array.Resize(ref dizi, 4);
+////Console.WriteLine("lutfen urun giriniz");
+////    string deger = Console.ReadLine();
+////dizi[dizi.Length - 1] = deger;
+////string[] yeniDizi = new string[] { "marka", "model", "motorHacim", "vitestipi", "yakittipi" };
+////Array.Resize(ref yeniDizi, 6);
+////string[] kayitlar;
+////kayitlar = { { marka }, { model }, { motorHacim }, { vitesTipi }, { yakitTipi } };
+////Array.Resize(ref dizi, 6);
+//char secim;
+//Console.BackgroundColor = ConsoleColor.DarkBlue;
+//Console.WriteLine("============================================");
+//Console.WriteLine("Araba katalogumuza hosgeldiniz");
+//Console.WriteLine("=============================");
+//Console.WriteLine("ilk girisiniz oldugundan lutfen yeni bir araba ekleyiniz");
+//Console.Write("ilk aracinizin markasini yaziniz: ");
+//marka.Add(Console.ReadLine());
+//Console.Write("ilk aracinizin modelini giriniz: ");
+//model.Add(Console.ReadLine());
+//Console.Write("ilk aracinizin motor hacmini giriniz: ");
+//motorHacim.Add(Console.ReadLine());
+//Console.Write("ilk aracinizin vites tipini giriniz: ");
+//vitesTipi.Add(Console.ReadLine());
+//Console.Write("ilk aracinizin yakit tipini giriniz: ");
+//yakitTipi.Add(Console.ReadLine());
+//Basla:
+//Console.Write("" +
+//    "\n" +
+//    "** Lutfen menuden bir secim yapiniz **\n" +
+//    "1-) Yeni arac Ekle\n" +
+//    "2-) Arac Listelele\n" +
+//    "3-) Arac Guncelle\n" +
+//    "4-) Arac Sil\n" +
+//    "5-) Arac arama\n" +
+//    "6-) Yeni bilgi Ekleme");
+//secim = char.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//    case '1':
+//        Console.Write("eklemek istediginiz arac sayisini giriniz: ");
+//        byte ekadet = byte.Parse(Console.ReadLine());
+//        if (ekadet > 0)
+//        {
+//            for (int i = 1; i <= ekadet; i++)
+//            {
+//                Console.Write(+i + "." + "aracin markasini yaziniz: ");
+//                marka.Add(Console.ReadLine());
+//                Console.Write(+i + "." + "aracin modelini giriniz: ");
+//                model.Add(Console.ReadLine());
+//                Console.Write(+i + "." + "aracin motor hacmini giriniz: ");
+//                motorHacim.Add(int.Parse(Console.ReadLine()));
+//                Console.Write(+i + "." + "aracin vites tipini giriniz: ");
+//                vitesTipi.Add(Console.ReadLine());
+//                Console.Write(+i + "." + "aracin yakit tipini giriniz: ");
+//                yakitTipi.Add(Console.ReadLine());
+//            }
+//        }
+//        else
+//        {
+//            Console.WriteLine("Gecersiz bir deger girdiginiz icin ana menuden tekrar baslayiniz");
+//        }
+//        goto Basla;
+//    case '2':
+//        kayitt = new string[marka.Count];
+//        for (int n = 0; n < marka.Count; n++)
+//        {
+//            Console.WriteLine("{0}.) Marka:{1}\tModel:{2}\tMotor:{3}\tVites:{4}\tYakit:{5}", n + 1, marka[n], model[n], motorHacim[n], vitesTipi[n], yakitTipi[n]);
+//            kayitt[n] = marka[n] +""+ model[n]+motorHacim[n] + vitesTipi[n] + yakitTipi[n];
+//        }
+//        goto Basla;
+//    case '3':
+//    Arabasla:
+//        Console.WriteLine("Guncellemek istediginiz satir numarasini veya ana menuye donmek icin 'M' tusunu tuslayiniz");
+//        foreach (var satir2 in marka)
+//        {
+//            Console.WriteLine(satir2);
+//        }
+//        string arasecim = Console.ReadLine();
+//        if (arasecim == "M" || arasecim == "m")
+//        {
+//            goto Basla;
+//        }
+//        else
+//        {
+//            int arasecim2 = int.Parse(arasecim);
+//            if (arasecim2 <= marka.Count)
+//            {
+//                Console.Write("Lutfen guncel markayi giriniz: ");
+//                marka[arasecim2 - 1] = Console.ReadLine();
+//                Console.Write("Lutfen guncel modeli giriniz: ");
+//                model[arasecim2 - 1] = Console.ReadLine();
+//                Console.Write("Lutfen guncel motor hacmini giriniz: ");
+//                motorHacim[arasecim2 - 1] = Console.ReadLine();
+//                Console.Write("Lutfen guncel vites tipini giriniz: ");
+//                vitesTipi[arasecim2 - 1] = Console.ReadLine();
+//                Console.Write("Lutfen guncel yakit tipini giriniz: ");
+//                yakitTipi[arasecim2 - 1] = Console.ReadLine();
+//            }
+//            else
+//            {
+//                Console.Write("hatali bir secim yaptiniz, tekrar denemek icin entera, ana menuye donmek icin M ye basin: ");
+//                string arasecim3 = Console.ReadLine();
+//                if (arasecim3 == "M" || arasecim3 == "m")
+//                {
+//                    goto Basla;
+//                }
+//                else
+//                {
+//                    goto Arabasla;
+//                }
+//            }
+//            goto Arabasla;
+//        }
+//    case '4':
+//    Arabasla2:
+//        Console.WriteLine("Silmek istediginiz satir numarasini veya ana menuye donmek icin 'M' tusunu tuslayiniz");
+//        foreach (var satir3 in marka)
+//        {
+//            Console.WriteLine(satir3);
+//        }
+//        string arasecim4 = Console.ReadLine();
+//        if (arasecim4 == "M" || arasecim4 == "m")
+//        {
+//            goto Basla;
+//        }
+//        else
+//        {
+//            int arasecim5 = int.Parse(arasecim4);
+//            if (arasecim5 <= marka.Count)
+//            {
+//                marka.RemoveAt(arasecim5 - 1);
+//                Console.WriteLine("Arac kaydi Silindi");
+//            }
+//            else
+//            {
+//                Console.WriteLine("hatali bir secim yaptiniz, tekrar denemek icin entera, ana menuye donmek icin M ye basin");
+//                string arasecim6 = Console.ReadLine();
+//                if (arasecim6 == "M" || arasecim6 == "m")
+//                {
+//                    goto Basla;
+//                }
+//                else
+//                {
+//                    goto Arabasla2;
+//                }
+//            }
+//        }
+//        goto Arabasla2;
+//    case '5':
+//        Console.Write("Lutfen aramak istediginiz aracin markasini giriniz: ");
+//        string arama = Console.ReadLine();
+//        goto Basla;
+//    case '6':
+//        Console.Write("Lutfen araclar icin eklemek istediginiz yeni bilgi basligini giriniz: ");
+//        string yb = Console.ReadLine();
+//        for (int a = 0; a < marka.Count; a++)
+//        {
+//            Console.WriteLine("Lutfen {0}.arac icin yeni bilgiyi giriniz", a + 1);
+//            yeni1.Add(Console.ReadLine());
+//        }
+//        goto Basla;
+//    default:
+//        break;
+//}
+#endregion
+#region 6.Ders Ödev
+
+
+//ArrayList Marka = new ArrayList();
+//ArrayList Model = new ArrayList();
+//ArrayList MotorHacim = new ArrayList();
+//ArrayList VitesTipi = new ArrayList();
+//ArrayList YakıtTipi = new ArrayList();
+//ArrayList AraçYılı = new ArrayList();
+//bool döngü = true;
+
+//Console.WriteLine("Arabanın Yılını Girmek İstiyormusunuz ?\n1-Evet\n2-Hayır ");
+//int yıl = Convert.ToInt32(Console.ReadLine());
+
+//try
+//{
+//    while (döngü)
+//    {
+
+
+//        if (yıl == 1)
+//        {
+
+
+//            char secim;
+//            Console.WriteLine("1-Araç Bilgisi Ekleme\n2-Araç Bilgisi Güncelleme\n3-Araç Bilgisi Silme\n4-Araç Bilgisi Arama\n5-Araç Bilgisi Çoklu Ekleme \n6-Araç Bilgisi Çoklu Güncelleme\n7-Araç Bilgisi Çoklu silme\n8-Kayıtlı Tüm Araç Modellerini Listele");
+//            secim = char.Parse(Console.ReadLine());
+//            switch (secim)
+//            {
+//                case '1':
+//                    Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                    Marka.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                    Model.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın MotorHacimini Giriniz : ");
+//                    MotorHacim.Add(Convert.ToInt32(Console.ReadLine()));
+//                    Console.WriteLine("Arabanın VitesTipini Giriniz : ");
+//                    VitesTipi.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın YakıtTipini Giriniz : ");
+//                    YakıtTipi.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın Yılını Giriniz : ");
+//                    AraçYılı.Add(Console.ReadLine());
+//                    break;
+//                case '2':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("Araç Listesinden lütfen güncellemek istediğiniz Araç Numarasını Giriniz(0 dan başlar) : ");
+//                        int pSecim = Convert.ToInt32(Console.ReadLine());
+//                        Console.WriteLine("Yeni Bilgileri Giriniz Giriniz : ");
+//                        Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                        Marka[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                        Model[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Motor Hacmini Giriniz : ");
+//                        MotorHacim[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Vites Tipini Giriniz : ");
+//                        VitesTipi[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Yakıt Tipini Giriniz : ");
+//                        YakıtTipi[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Araç Yılını Giriniz : ");
+//                        AraçYılı[pSecim] = Console.ReadLine();
+//                    }
+
+//                    break;
+//                case '3':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("Araç Listesinden lütfen silmek istediğiniz Bilginin Numarasını giriniz : ");
+//                        int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//                        Marka.RemoveAt(pSecim2);
+//                        Model.RemoveAt(pSecim2);
+//                        MotorHacim.RemoveAt(pSecim2);
+//                        VitesTipi.RemoveAt(pSecim2);
+//                        YakıtTipi.RemoveAt(pSecim2);
+//                        AraçYılı.RemoveAt(pSecim2);
+//                        Console.WriteLine("Araç ve tüm bilgileri Silindi");
+//                    }
+
+//                    break;
+//                case '4':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("Araç Listesinden aramak istediğiniz Aracın Numarasını giriniz : ");
+//                        int pSecim3 = Convert.ToInt32(Console.ReadLine());
+
+//                        Console.WriteLine("Markası : " + Marka[pSecim3]);
+//                        Console.WriteLine("Modeli : " + Model[pSecim3]);
+//                        Console.WriteLine("Motor Hacimi : " + MotorHacim[pSecim3]);
+//                        Console.WriteLine("Vites Tipi : " + VitesTipi[pSecim3]);
+//                        Console.WriteLine("Yakıt Tipi : " + YakıtTipi[pSecim3]);
+//                        Console.WriteLine("Araç Yılı : " + AraçYılı[pSecim3]);
+//                    }
+
+//                    break;
+//                case '5':
+//                    Console.WriteLine("kaç araç ekleyeceksınız? : ");
+//                    int x = Convert.ToInt32(Console.ReadLine());
+
+//                    for (int i = 0; i < x; i++)
+//                    {
+//                        Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                        Marka.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                        Model.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın MotorHacimini Giriniz : ");
+//                        MotorHacim.Add(Convert.ToInt32(Console.ReadLine()));
+//                        Console.WriteLine("Arabanın VitesTipini Giriniz : ");
+//                        VitesTipi.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın YakıtTipini Giriniz : ");
+//                        YakıtTipi.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın Yılını Giriniz : ");
+//                        AraçYılı.Add(Console.ReadLine());
+//                    }
+//                    break;
+//                case '6':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("kaç araç güncelleyeceksiniz? : ");
+//                        int y = Convert.ToInt32(Console.ReadLine());
+//                        for (int i = 0; i < y; i++)
+//                        {
+//                            Console.WriteLine("Araç Listesinden lütfen güncellemek istediğiniz Araç Numarasını Giriniz(0 dan başlar) : ");
+//                            int pSecim = Convert.ToInt32(Console.ReadLine());
+//                            Console.WriteLine("Yeni Bilgileri Giriniz Giriniz : ");
+//                            Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                            Marka[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                            Model[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Motor Hacmini Giriniz : ");
+//                            MotorHacim[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Vites Tipini Giriniz : ");
+//                            VitesTipi[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Yakıt Tipini Giriniz : ");
+//                            YakıtTipi[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Araç Yılını Giriniz : ");
+//                            AraçYılı[pSecim] = Console.ReadLine();
+//                        }
+
+//                    }
+//                    break;
+//                case '7':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("kaç araç sileceksiniz? : ");
+//                        int z = Convert.ToInt32(Console.ReadLine());
+//                        for (int i = 0; i < z; i++)
+//                        {
+//                            Console.WriteLine("Araç Listesinden lütfen silmek istediğiniz Araç Numarasını Giriniz(0 dan başlar) : ");
+//                            int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//                            Marka.RemoveAt(pSecim2);
+//                            Model.RemoveAt(pSecim2);
+//                            MotorHacim.RemoveAt(pSecim2);
+//                            VitesTipi.RemoveAt(pSecim2);
+//                            YakıtTipi.RemoveAt(pSecim2);
+//                            AraçYılı.RemoveAt(pSecim2);
+//                            Console.WriteLine("Araç ve tüm bilgileri Silindi");
+//                        }
+//                    }
+//                    break;
+//                case '8':
+//                    if (Model.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        foreach (var item in Model)
+//                        {
+//                            Console.WriteLine(item);
+//                        }
+//                    }
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
+//        else if (yıl == 2)
+//        {
+//            Console.WriteLine("Araç Yılı Eklenmemıştır");
+
+
+//            char secim;
+//            Console.WriteLine("1-Araç Bilgisi Ekleme\n2-Araç Bilgisi Güncelleme\n3-Araç Bilgisi Silme\n4-Araç Bilgisi Arama\n5-Araç Bilgisi Çoklu Ekleme \n6-Araç Bilgisi Çoklu Güncelleme\n7-Araç Bilgisi Çoklu silme\n8-Kayıtlı Tüm Araçları Listele");
+//            secim = char.Parse(Console.ReadLine());
+//            switch (secim)
+//            {
+//                case '1':
+//                    Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                    Marka.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                    Model.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın MotorHacimini Giriniz : ");
+//                    MotorHacim.Add(Convert.ToInt32(Console.ReadLine()));
+//                    Console.WriteLine("Arabanın VitesTipini Giriniz : ");
+//                    VitesTipi.Add(Console.ReadLine());
+//                    Console.WriteLine("Arabanın YakıtTipini Giriniz : ");
+//                    YakıtTipi.Add(Console.ReadLine());
+//                    break;
+//                case '2':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("Araç Listesinden lütfen güncellemek istediğiniz Araç Numarasını Giriniz(0 dan başlar) : ");
+//                        int pSecim = Convert.ToInt32(Console.ReadLine());
+//                        Console.WriteLine("Yeni Bilgileri Giriniz Giriniz : ");
+//                        Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                        Marka[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                        Model[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Motor Hacmini Giriniz : ");
+//                        MotorHacim[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Vites Tipini Giriniz : ");
+//                        VitesTipi[pSecim] = Console.ReadLine();
+//                        Console.WriteLine("Arabanın Yakıt Tipini Giriniz : ");
+//                        YakıtTipi[pSecim] = Console.ReadLine();
+//                    }
+
+//                    break;
+//                case '3':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("Araç Listesinden lütfen silmek istediğiniz Bilginin Numarasını giriniz : ");
+//                        int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//                        Marka.RemoveAt(pSecim2);
+//                        Model.RemoveAt(pSecim2);
+//                        MotorHacim.RemoveAt(pSecim2);
+//                        VitesTipi.RemoveAt(pSecim2);
+//                        YakıtTipi.RemoveAt(pSecim2);
+//                        Console.WriteLine("Araç ve tüm bilgileri Silindi");
+//                    }
+
+//                    break;
+//                case '4':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("Araç Listesinden aramak istediğiniz Aracın Numarasını giriniz : ");
+//                        int pSecim3 = Convert.ToInt32(Console.ReadLine());
+
+//                        Console.WriteLine("Markası : " + Marka[pSecim3]);
+//                        Console.WriteLine("Modeli : " + Model[pSecim3]);
+//                        Console.WriteLine("Motor Hacimi : " + MotorHacim[pSecim3]);
+//                        Console.WriteLine("Vites Tipi : " + VitesTipi[pSecim3]);
+//                        Console.WriteLine("Yakıt Tipi : " + YakıtTipi[pSecim3]);
+//                    }
+
+//                    break;
+//                case '5':
+//                    Console.WriteLine("kaç araç ekleyeceksınız? : ");
+//                    int x = Convert.ToInt32(Console.ReadLine());
+
+//                    for (int i = 0; i < x; i++)
+//                    {
+//                        Console.WriteLine("Lütfen Personel Adını Giriniz : ");
+//                        Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                        Marka.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                        Model.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın MotorHacimini Giriniz : ");
+//                        MotorHacim.Add(Convert.ToInt32(Console.ReadLine()));
+//                        Console.WriteLine("Arabanın VitesTipini Giriniz : ");
+//                        VitesTipi.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın YakıtTipini Giriniz : ");
+//                        YakıtTipi.Add(Console.ReadLine());
+//                        Console.WriteLine("Arabanın Yılını Giriniz : ");
+//                    }
+//                    break;
+//                case '6':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("kaç araç güncelleyeceksiniz? : ");
+//                        int y = Convert.ToInt32(Console.ReadLine());
+//                        for (int i = 0; i < y; i++)
+//                        {
+//                            Console.WriteLine("Araç Listesinden lütfen güncellemek istediğiniz Araç Numarasını Giriniz(0 dan başlar) : ");
+//                            int pSecim = Convert.ToInt32(Console.ReadLine());
+//                            Console.WriteLine("Yeni Bilgileri Giriniz Giriniz : ");
+//                            Console.WriteLine("Arabanın Markasını Giriniz : ");
+//                            Marka[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Modelini Giriniz : ");
+//                            Model[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Motor Hacmini Giriniz : ");
+//                            MotorHacim[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Vites Tipini Giriniz : ");
+//                            VitesTipi[pSecim] = Console.ReadLine();
+//                            Console.WriteLine("Arabanın Yakıt Tipini Giriniz : ");
+//                            YakıtTipi[pSecim] = Console.ReadLine();
+//                        }
+
+//                    }
+//                    break;
+//                case '7':
+//                    if (Marka.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine("kaç araç sileceksiniz? : ");
+//                        int z = Convert.ToInt32(Console.ReadLine());
+//                        for (int i = 0; i < z; i++)
+//                        {
+//                            Console.WriteLine("Araç Listesinden lütfen silmek istediğiniz Araç Numarasını Giriniz(0 dan başlar) : ");
+//                            int pSecim2 = Convert.ToInt32(Console.ReadLine());
+//                            Marka.RemoveAt(pSecim2);
+//                            Model.RemoveAt(pSecim2);
+//                            MotorHacim.RemoveAt(pSecim2);
+//                            VitesTipi.RemoveAt(pSecim2);
+//                            YakıtTipi.RemoveAt(pSecim2);
+//                            Console.WriteLine("Araç ve tüm bilgileri Silindi");
+//                        }
+//                    }
+//                    break;
+//                case '8':
+//                    if (Model.Count == 0)
+//                    {
+//                        Console.WriteLine("Listede araç yoktur.");
+//                    }
+//                    else
+//                    {
+//                        foreach (var item in Model)
+//                        {
+//                            Console.WriteLine(item);
+//                        }
+//                    }
+//                    break;
+//                default:
+//                    break;
+//            }
+
+
+//        }
+//        else if (yıl != 1 && yıl != 2)
+//        {
+//            Console.WriteLine("Yanlış değer girdiniz tekrar deneyiniz");
+//        }
+//        Console.WriteLine("Bilgiler Kaydedildi Ve İşleminiz Bitti Tekrar İşlem Yapmak İstermisiniz ?\n1-Evet\n2-Hayır");
+//        int asd = Convert.ToInt32(Console.ReadLine());
+//        if (asd == 1)
+//        {
+//            Console.WriteLine("Başa Dönülüyor.");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Çıkış yapılıyor.");
+//            döngü = false;
+//        }
+//    }
+//}
+//catch (Exception)
+//{
+//    Console.WriteLine("Hatalı bir işlem yaptınız programı kapatıp tekrar açın.");
+//}
+#endregion
+#region Ferhat Aydın Ödev
+//ArrayList marka = new ArrayList();
+//ArrayList model = new ArrayList();
+//ArrayList motorHacim = new ArrayList();
+//ArrayList vitesTipi = new ArrayList();
+//ArrayList yakitTipi = new ArrayList();
+//int[] uretimYili = new int[] { };
+//ArrayList kayitlar = new ArrayList();
+//char secim;
+//bool durum = true;
+
+//Console.Title = "Araç Stok Sistemi";
+
+//while (durum)
+//{
+//    Console.WriteLine("ARAÇ STOK SİSTEMİ");
+//    Console.WriteLine("[1] Aracı Ekle");
+//    Console.WriteLine("[2] Aracı Güncelle");
+//    Console.WriteLine("[3] Aracı Sil");
+//    Console.WriteLine("[4] Çoklu Aracı Ekle");
+//    Console.WriteLine("[5] Üretim Yılı Ekle");
+//    Console.WriteLine("[6] Çoklu Aracı Güncelle");
+//    Console.WriteLine("[7] Çoklu Aracı Sil");
+//    Console.WriteLine("[8] Araç Listeleme");
+//    Console.WriteLine("[0] Programdan Çıkış");
+
+//    Console.WriteLine("\nYapmak istediğiniz İşlemi Seçiniz : ");
+//    secim = Console.ReadKey().KeyChar;
+//    switch (secim)
+//    {
+//        case '1':
+//            // Aracı Ekleme İşlemi
+//            //Kullanıcının girdilerinin okunması
+//            Console.WriteLine("\nMarka: ");
+//            marka.Add(Console.ReadLine());
+//            Console.WriteLine("Model: ");
+//            model.Add(Console.ReadLine());
+//            Console.WriteLine("Motor Hacim: ");
+//            motorHacim.Add(Convert.ToInt32(Console.ReadLine()));
+//            Console.WriteLine("Vites Tipi: ");
+//            vitesTipi.Add(Console.ReadLine());
+//            Console.WriteLine("Yakıt Tipi: ");
+//            yakitTipi.Add(Console.ReadLine());
+//            break;
+//        case '2':
+//            int updateSecimId; //Güncellenecek aracın id'si
+//            for (int i = 0; i < marka.Count; i++)
+//            {
+//                Console.WriteLine(i);
+//                Console.WriteLine("{0}. -> {1} {2}", i, marka[i], model[i]);
+//            }
+//            Console.WriteLine("\nGüncellemek istediğiniz aracın id değerini giriniz: ");
+//            updateSecimId = Convert.ToInt32(Console.ReadLine());
+
+//            // Aracı güncelleme işlemi yapılıyor
+//            if (marka.IndexOf(updateSecimId) != null || marka.Count < updateSecimId && updateSecimId >= 0)
+//            {
+//                Console.WriteLine("\nGüncellenecek Marka: ");
+//                marka[updateSecimId] = Console.ReadLine();
+//                Console.WriteLine("Güncellenecek Model: ");
+//                model[updateSecimId] = Console.ReadLine();
+//                Console.WriteLine("Güncellenecek Motor Hacmi: ");
+//                motorHacim[updateSecimId] = Convert.ToInt32(Console.ReadLine());
+//                Console.WriteLine("Güncellenecek Vites Tipi: ");
+//                vitesTipi[updateSecimId] = Console.ReadLine();
+//                Console.WriteLine("Güncellenecek Yakıt Tipi: ");
+//                yakitTipi[updateSecimId] = Console.ReadLine();
+//            }
+//            else
+//            {
+//                Console.WriteLine("Geçerli bir araç bilgisi girmediniz. Lütfen tekrar deneyin.");
+//            }
+//            break;
+
+//        case '3':
+//            // Aracı Silme İşlemi
+//            int deleteSecimId; //Silinecek aracın id'si
+
+//            Console.WriteLine("\nSilmek istediğiniz aracın id değerini giriniz : ");
+//            deleteSecimId = Convert.ToInt32(Console.ReadLine());
+//            // Aracı silme işlemi yapılıyor
+//            marka.RemoveAt(deleteSecimId);
+//            model.RemoveAt(deleteSecimId);
+//            motorHacim.RemoveAt(deleteSecimId);
+//            vitesTipi.RemoveAt(deleteSecimId);
+//            yakitTipi.RemoveAt(deleteSecimId);
+//            break;
+//        case '4':
+//            Console.WriteLine("Kaç adet araç eklemek istiyorsunuz ?");
+//            string selectMarka;
+//            string selectModel;
+//            int selectMotorHacim;
+//            string selectVitesTipi;
+//            string selectYakitTipi;
+//            int aracSayisi = int.Parse(Console.ReadLine());
+//            for (int i = 0; i < aracSayisi; i++)
+//            {
+//                Console.WriteLine("\nÇoklu Aracı Eklemek istediğiniz marka adını giriniz: ");
+//                selectMarka = Console.ReadLine();
+//                if (selectMarka != "")
+//                {
+//                    Console.WriteLine("Model: ");
+//                    selectModel = Console.ReadLine();
+//                    if (selectModel != "")
+//                    {
+//                        Console.WriteLine("Motor Hacim: ");
+//                        selectMotorHacim = Convert.ToInt32(Console.ReadLine());
+//                        if (selectMotorHacim > 0)
+//                        {
+//                            Console.WriteLine("Vites Tipi: ");
+//                            selectVitesTipi = Console.ReadLine();
+//                            if (selectVitesTipi != "")
+//                            {
+//                                Console.WriteLine("Yakıt Tipi: ");
+//                                selectYakitTipi = Console.ReadLine();
+//                                if (selectYakitTipi != "")
+//                                {
+//                                    marka.Add(selectMarka);
+//                                    model.Add(selectModel);
+//                                    motorHacim.Add(selectMotorHacim);
+//                                    vitesTipi.Add(selectVitesTipi);
+//                                    yakitTipi.Add(selectYakitTipi);
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//            break;
+//        case '5':
+//            // Üretim Yılı Ekleme İşlemi
+
+//            if (uretimYili.Length != marka.Count)
+//            {
+//                uretimYili = new int[marka.Count];
+//            }
+//            for (int i = 0; i < marka.Count; i++)
+//            {
+//                Console.WriteLine(i);
+//                Console.WriteLine("{0}. -> {1} {2} {3}", i, marka[i], model[i], uretimYili[i]);
+//            }
+//            Console.WriteLine("\nEklemek istediğiniz Aracların ID Değerlerini giriniz: ");
+//            var indexNumber = int.Parse(Console.ReadLine());
+//            if (indexNumber.ToString() != "" && marka.Count > indexNumber && marka.IndexOf(indexNumber) != null)
+//            {
+//                Console.WriteLine("{0} Marka Arabanın üretim yılını giriniz: ", marka[indexNumber]);
+//                uretimYili[indexNumber] = Convert.ToInt32(Console.ReadLine());
+//            }
+//            else
+//            {
+//                Console.WriteLine("Sistemde böyle bir araba bulunamadı!");
+//            }
+//            break;
+//        case '6':
+//            // Çoklu Aracı Güncelleme İşlemi
+//            Console.WriteLine("Kaç Adet Aaraç Güncelleyeceksiniz ?\n");
+//            int cokluAracMiktar = int.Parse(Console.ReadLine());
+//            while (cokluAracMiktar > 0)
+//            {
+//                Console.WriteLine("Güncelleyeceğiniz Aracın Id numarasını giriniz.");
+//                int cokluAracId = int.Parse(Console.ReadLine());
+//                if (marka.Count > cokluAracId)
+//                {
+//                    Console.WriteLine("{0} {1} ", marka[cokluAracId], model[cokluAracId]);
+//                    Console.WriteLine("Güncellenecek Marka: ");
+//                    marka[cokluAracId] = Console.ReadLine();
+//                    Console.WriteLine("Güncellenecek Model: ");
+//                    model[cokluAracId] = Console.ReadLine();
+//                    Console.WriteLine("Güncellenecek motorHacim: ");
+//                    motorHacim[cokluAracId] = Convert.ToInt32(Console.ReadLine());
+//                    Console.WriteLine("Güncellenecek Vites Tipi: ");
+//                    vitesTipi[cokluAracId] = Console.ReadLine();
+//                    Console.WriteLine("Güncellenecek yakitTipi: ");
+//                    yakitTipi[cokluAracId] = Console.ReadLine();
+//                    cokluAracMiktar--;
+//                }
+//                else
+//                {
+//                    Console.WriteLine("Lütfen araç numarasını doğru giriniz!");
+//                    break;
+//                }
+//            }
+//            break;
+//        case '7':
+
+//            Console.WriteLine("Kaç Adet Araç Silmek İstiyorsunuz ?");
+//            // Çoklu Aracı Silme İşlemi
+//            int multiDeleteSecimId; //Silinecek Aracın ID'Sİ
+
+//            // Silinecek Id'lerin Kontrolü
+//            if (marka.Count > 0)
+//            {
+//                for (int i = 0; i < marka.Count; i++)
+//                {
+//                    Console.WriteLine("{0}. -> {1} {2}", i, marka[i], model[i]);
+//                }
+//                Console.WriteLine("\nSilmek istediğiniz Aracların ID Değerlerini giriniz: ");
+//                multiDeleteSecimId = Convert.ToInt32(Console.ReadLine());
+
+//                if (multiDeleteSecimId > 0 && multiDeleteSecimId < marka.Count)
+//                {
+//                    marka.RemoveAt(multiDeleteSecimId);
+//                    model.RemoveAt(multiDeleteSecimId);
+//                    motorHacim.RemoveAt(multiDeleteSecimId);
+//                    vitesTipi.RemoveAt(multiDeleteSecimId);
+//                    yakitTipi.RemoveAt(multiDeleteSecimId);
+//                }
+//                else
+//                {
+//                    Console.WriteLine("Girdiğiniz ID değeri sınırların dışında. Tekrar deneyin.");
+//                    break;
+//                }
+//            }
+//            else
+//            {
+//                Console.WriteLine("Silinecek araba mevcut değil.");
+//            }
+//            break;
+//        case '8':
+//            for (int i = 0; i < marka.Count; i++)
+//            {
+//                kayitlar.Add(marka[i] + " " + model[i] + "" + motorHacim[i] + " " + vitesTipi[i] + " " + yakitTipi[i] + " " + uretimYili[i]);
+//            }
+//            foreach (var item in kayitlar)
+//            {
+//                Console.WriteLine(item);
+//            }
+//            break;
+//        case '0':
+//            // Programdan Çıkış İşlemi
+//            durum = false;
+//            break;
+//    }
+//}
+#endregion
+#region Class ve Neseler
+/*
+ Sınıf(Class): Bir nesnenin şeklini
+tanımlayan bir şablondur. Sınıf, verileri ve
+bu verileri işleyecek kodu içerir.
+public class Veri{
+
+}
+Sınıf nesneleri oluşturmak için temel 
+özellikleri içerir.
+Nesne (object) : Sınıfların birer örneğidir.
+Bu durumda sınıf, neslerin inşasını oluştur
+mak için tanımlanan bir kılavuzdur.
+ */
+#endregion
+//OrnekSinif ornekSinif=new OrnekSinif();
+/*Yukarıdaki örnek bir nesnedir.*/
+//ornekSinif.Ad = "Ahmet";
+//ornekSinif.Soyad = "Genç";
+//ornekSinif.Yas = 17;
+//Console.WriteLine(ornekSinif.Ad + " " + ornekSinif.Soyad + " " + ornekSinif.Yas);
+//Console.WriteLine("Bir Sayı Giriniz : ");
+//int say1=Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Bir Sayı Giriniz : ");
+//int say2= Convert.ToInt32(Console.ReadLine());
+//ornekSinif.MatematikIslemVoid(say1, say2);
+//Console.WriteLine(ornekSinif.MatematikIslemDondur(say1, say2));
+
+/*
+ Bir ürünün KDV'sini hesaplayan programı yazın program.cs
+ Sonra Aynı işlemi class üzerinde
+hem void metotu hemde double tipinde değer döndürerek metot oluştuurn.
+ */
+//Console.WriteLine("Ürün Fiyatını Giriniz. ");
+//double pfiyat = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Kdv Tutarınızı giriniz . ");
+//double pkdv=Convert.ToDouble(Console.ReadLine());
+//ornekSinif.kdvHesaplaVoid(pfiyat, pkdv);
+//double deger=ornekSinif.kdvHesaplamaDouble(pfiyat, pkdv);
+//Console.WriteLine(deger);
+MatematikselHesaplamalar matematikselHesaplamalar = new MatematikselHesaplamalar();
+//Console.WriteLine("Lütfen Bir Sayı Giriniz : ");
+//matematikselHesaplamalar.say1 = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Lütfen İkinci Sayıyı Giriniz : ");
+//matematikselHesaplamalar.say2 = Convert.ToDouble(Console.ReadLine());
+//matematikselHesaplamalar.VoidHesaplamalar();
+//matematikselHesaplamalar.DHesaplamalar();
+/*
+ * Kullanıcıdan bilgilerini alacağımız değişkenler oluşturlacak class'ta
+ * Daha sonra bu değişkenlere değerleri yerine atamaya yapacağız.
+ * bu gelen değişken isimlerinde kadın ise biri metot uygulanacak
+ * erkek ise bir metot uygulanacak.
+ */
+Bilgiler bilgiler=new Bilgiler();
+bilgiler.BilgileriYazdir();
+bilgiler.GenelIslemler();
 Console.ReadKey();
