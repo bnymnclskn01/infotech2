@@ -1574,6 +1574,8 @@ tutulan sayı ve kacınca bildiği cıkacak
 //}
 #region Çok Boyutlu Diziler
 using infotech2.OneClass.Classes;
+using infotech2.OneClass.Ev;
+using infotech2.OneClass.Inheritance;
 using infotech2.OneClass.Kapsulleme;
 using System.Collections;
 
@@ -2909,3 +2911,76 @@ Ogrenci();
  */
 //BiletSatis biletSatis = new BiletSatis();
 //biletSatis.ActionMetot();
+//Tekniker tekniker= new Tekniker();
+//Muhendis muhendis=new Muhendis();
+//Yonetici yonetici=new Yonetici();
+//char secim;
+//Console.WriteLine("1-Mühendis Ekle\n2-Yönetici Ekle\n3-Tekniker Ekle");
+//secim = char.Parse(Console.ReadLine());
+//switch (secim)
+//{
+//	case '1':
+//		muhendis.BilgileriYazdir();
+//		break;
+//	case '2':
+//		yonetici.BilgileriYazdir();
+//		break;
+//	case '3':
+//		tekniker.BilgileriYazdir();
+//		break;
+//	default:
+//		Console.WriteLine("Yanlış İşlem Yaptınız.");
+//		break;
+//}
+Kiralik kiralik=new Kiralik();
+Satilik satilik=new Satilik();
+Console.WriteLine("1-Kiralık\n2-Satılık");
+int secim = int.Parse(Console.ReadLine());
+switch (secim)
+{
+	case 1:
+		Console.WriteLine(kiralik.ilMesaj);
+		kiralik.Il = Console.ReadLine();
+		Console.WriteLine(kiralik.ilceMesaj);
+		kiralik.Ilce = Console.ReadLine();
+		Console.WriteLine(kiralik.alanMesaj);
+		kiralik.Alan = Console.ReadLine();
+		Console.WriteLine(kiralik.isinmaMesaj);
+		kiralik.Isinma = Console.ReadLine();
+		Console.WriteLine(kiralik.odaMesaj);
+		kiralik.Oda = Console.ReadLine();
+		Console.WriteLine(kiralik.depozitoMesaj);
+		kiralik.Depozito = decimal.Parse(Console.ReadLine());
+		Console.WriteLine(kiralik.fiyatMesaj);
+		kiralik.Fiyat=decimal.Parse(Console.ReadLine());
+		Console.WriteLine(kiralik.sozlesmeMesaj);
+		kiralik.sozlesmeZamani = int.Parse(Console.ReadLine());
+		Console.WriteLine(kiralik.telMesaj);
+		kiralik.Tel = long.Parse(Console.ReadLine());
+		Console.Clear();
+		kiralik.ozellikGoster();
+		kiralik.kiralikOzellik();
+		break;
+	case 2:
+        Console.WriteLine(satilik.ilMesaj);
+        satilik.Il = Console.ReadLine();
+        Console.WriteLine(satilik.ilceMesaj);
+        satilik.Ilce = Console.ReadLine();
+        Console.WriteLine(satilik.alanMesaj);
+        satilik.Alan = Console.ReadLine();
+        Console.WriteLine(satilik.isinmaMesaj);
+        satilik.Isinma = Console.ReadLine();
+        Console.WriteLine(satilik.odaMesaj);
+        satilik.Oda = Console.ReadLine();
+        Console.WriteLine(satilik.fiyatMesaj);
+        satilik.Fiyat = decimal.Parse(Console.ReadLine());
+        Console.WriteLine(satilik.telMesaj);
+        satilik.Tel = long.Parse(Console.ReadLine());
+        Console.Clear();
+        satilik.ozellikGoster();
+        satilik.satilikOzellik();
+        break;
+	default:
+		Console.WriteLine("Yanlış İşlem Yaptınız");
+		break;
+}
