@@ -1574,6 +1574,7 @@ tutulan sayı ve kacınca bildiği cıkacak
 //}
 #region Çok Boyutlu Diziler
 using infotech2.OneClass.Classes;
+using infotech2.OneClass.Kapsulleme;
 using System.Collections;
 
 //string[,] dizi2;
@@ -2865,7 +2866,7 @@ hem void metotu hemde double tipinde değer döndürerek metot oluştuurn.
 //ornekSinif.kdvHesaplaVoid(pfiyat, pkdv);
 //double deger=ornekSinif.kdvHesaplamaDouble(pfiyat, pkdv);
 //Console.WriteLine(deger);
-MatematikselHesaplamalar matematikselHesaplamalar = new MatematikselHesaplamalar();
+//MatematikselHesaplamalar matematikselHesaplamalar = new MatematikselHesaplamalar();
 //Console.WriteLine("Lütfen Bir Sayı Giriniz : ");
 //matematikselHesaplamalar.say1 = Convert.ToDouble(Console.ReadLine());
 //Console.WriteLine("Lütfen İkinci Sayıyı Giriniz : ");
@@ -2878,7 +2879,33 @@ MatematikselHesaplamalar matematikselHesaplamalar = new MatematikselHesaplamalar
  * bu gelen değişken isimlerinde kadın ise biri metot uygulanacak
  * erkek ise bir metot uygulanacak.
  */
-Bilgiler bilgiler=new Bilgiler();
-bilgiler.BilgileriYazdir();
-bilgiler.GenelIslemler();
-Console.ReadKey();
+//Bilgiler bilgiler=new Bilgiler();
+//bilgiler.BilgileriYazdir();
+//bilgiler.GenelIslemler();
+//EnCapsulation enCapsulation=new EnCapsulation();
+//enCapsulation.Country = "";
+//Console.WriteLine(enCapsulation.Country);
+//FutbolcuBilgileri futbolcuBilgileri = new FutbolcuBilgileri();
+//futbolcuBilgileri.BilgileriKullan();
+//Console.ReadKey();
+/*
+ string tipinde 5 değişken oluştuurn kapsülleme ile
+adiSoyadi
+Country
+City
+Phone
+Address
+
+char tipinde 1 değişken kapsülleme ile
+Secim
+double tipinde 2 değisken kapsülleme aracı ile
+obilet=59.99
+tbilet 129.99
+Ogrenci ve Tam Biletliye göre çalışacak 3 adet metot yazılacak
+1. Ogrenci Metot
+2. Tam Biletli Metotu
+3. İslem Seçim Metotu
+Ogrenci();
+ */
+//BiletSatis biletSatis = new BiletSatis();
+//biletSatis.ActionMetot();
