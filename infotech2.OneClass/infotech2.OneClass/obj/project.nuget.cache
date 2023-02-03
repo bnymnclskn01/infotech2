@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Kh8ltEPOQI+jWlzgYD20T5cs3LO0BA5PxItwtAd5YHbkekbF/0Ay3waB4JndrCdd8dcFy6NUI0sh2vC7ik0nuw==",
+  "dgSpecHash": "GoX8IWcJl8oyjhpwpUTMIwWClJLVAyv8S8UERS13/7nLf/Sv+D6/NWT6Esx3dqICShtHYfG6CM20Eg7vbgSLbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ever_\\OneDrive\\Belgeler\\GitHub\\infotech2\\infotech2.OneClass\\infotech2.OneClass\\infotech2.OneClass.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ever_\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ever_\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\ever_\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\ever_\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
