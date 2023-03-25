@@ -1573,6 +1573,7 @@ tutulan sayı ve kacınca bildiği cıkacak
 //    Console.WriteLine(dizi[i]);
 //}
 #region Çok Boyutlu Diziler
+using infotech2.OneClass.Abstract;
 using infotech2.OneClass.Bolunebilme;
 using infotech2.OneClass.Classes;
 using infotech2.OneClass.Ev;
@@ -3045,20 +3046,22 @@ return 0
 //{
 //    Console.WriteLine($"{item.Value}");
 //}
-CGeometri cGeometri = new CGeometri();
-Console.WriteLine("Hesaplamak istediğiniz veri adeti kaç olacak ?");
-int sayi = Convert.ToInt32(Console.ReadLine());
-for (int i = 0; i < sayi; i++)
-{
-    Console.WriteLine("Kısa Kenarı Giriniz : ");
-    int kisa= Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Uzun Kenarı Giriniz : ");
-    int uzun= Convert.ToInt32(Console.ReadLine());
-    cGeometri.Alan(i, kisa, uzun);
-    cGeometri.Cevre(i,kisa, uzun);
-}
-foreach (var item in cGeometri.Alanlar)
-{
-    Console.WriteLine("Alan : " + item.Value + "\t" + "Çevre : " + cGeometri.Cevreler[item.Key]);
-}
+//CGeometri cGeometri = new CGeometri();
+//Console.WriteLine("Hesaplamak istediğiniz veri adeti kaç olacak ?");
+//int sayi = Convert.ToInt32(Console.ReadLine());
+//for (int i = 0; i < sayi; i++)
+//{
+//    Console.WriteLine("Kısa Kenarı Giriniz : ");
+//    int kisa= Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("Uzun Kenarı Giriniz : ");
+//    int uzun= Convert.ToInt32(Console.ReadLine());
+//    cGeometri.Alan(i, kisa, uzun);
+//    cGeometri.Cevre(i,kisa, uzun);
+//}
+//foreach (var item in cGeometri.Alanlar)
+//{
+//    Console.WriteLine("Alan : " + item.Value + "\t" + "Çevre : " + cGeometri.Cevreler[item.Key]);
+//}
+CarpisanAraba carpisanAraba = new CarpisanAraba();
+carpisanAraba.YolculugaBasla();
 Console.ReadKey();

@@ -1,0 +1,15 @@
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\bin\Debug\net7.0\AbsractClass.exe
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\bin\Debug\net7.0\AbsractClass.deps.json
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\bin\Debug\net7.0\AbsractClass.runtimeconfig.json
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\bin\Debug\net7.0\AbsractClass.dll
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\bin\Debug\net7.0\AbsractClass.pdb
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.csproj.AssemblyReference.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.AssemblyInfoInputs.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.AssemblyInfo.cs
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.csproj.CoreCompileInputs.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.dll
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\refint\AbsractClass.dll
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.pdb
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\AbsractClass.genruntimeconfig.cache
+C:\Users\ever_\OneDrive\Belgeler\GitHub\infotech2\infotech2.OneClass\AbsractClass\obj\Debug\net7.0\ref\AbsractClass.dll
